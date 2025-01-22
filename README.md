@@ -17,7 +17,7 @@ Portfolio of My Work.
 Contact Form Section.
 Links to Accounts - GitHub, Email & Social Media
 
-Live Site: outiswebsolutions.com
+Live Site with Github Pages : https://outiswebsolutions.github.io/outis-web-solutions 
 Questions? Email me anytime. outiswebsolutions@gmail.com
 
 
