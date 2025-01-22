@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- As of Nov 2021 leave this out unless targeting legacy browsers ... If you need to support IE9 or IE8, then I would recommend using the tag. If you only support the latest browsers (IE11 and/or Edge) then I would consider dropping this tag altogether. If you use Twitter Bootstrap and need to eliminate validation warnings, this tag must appear in its specified order. 
+    CITE: https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Outis Web Solutions portfolio page for web development freelancing">
+    <meta name="Outis Ulysseus" content="Outis Web Solutions">
+    <meta name="robots" content="index, follow"> <!-- For SEO: index or noindex, follow or nofollow -->
+
+    <!-- Social Media Meta Tags (Open Graph, Twitter Cards) -->
+    <meta property="og:title" content="Outis Web Solutions Portfolio Page">
+    <meta property="og:description" content="Outis Web Solutions Portfolio Page">
+    <meta property="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.stack.imgur.com%2F6DHqg.gif&f=1&nofb=1&ipt=7c7ce6f62e0b4655d4415c7a339bff0f14a9ce9ae433fbc7d8c6421295b2a401&ipo=images">
+    <meta property="og:url" content="#">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Outis Web Solutions">
+    <meta name="twitter:description" content="Outis Web Solutions portfolio page for freelance web dev">
+    <meta name="twitter:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.stack.imgur.com%2F6DHqg.gif&f=1&nofb=1&ipt=7c7ce6f62e0b4655d4415c7a339bff0f14a9ce9ae433fbc7d8c6421295b2a401&ipo=images">
+
+    <title>Outis Web Solutions Portfolio Page</title> <!-- Page title (important for SEO and user experience) -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Optional: Apple Touch Icon for iOS devices -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"> <!-- ... Favicon: Make sure you have different icon formats for various devices (e.g., a 32x32 pixel .ico for desktop, .png for Apple touch icons, etc.).
+Apple Touch Icon: The <link rel="apple-touch-icon" href="apple-touch-icon.png"> is a great touch. Just ensure that the apple-touch-icon.png exists in your root folder. ... -->
+
+    <!-- External CSS (optional, can link to stylesheets here) -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Web Fonts (optional, Google Fonts, etc.) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- FontAwesome is Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+
+<body>
+    <!-- Page Content -->
+
+    <header class="sticky-flexbox">
+        <nav class="navbar" id="navbar">
+            <!-- Navigation bar code goes here -->
+            <!-- Logo -->
+            <a href="#" class="logo">
+              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.stack.imgur.com%2F6DHqg.gif&f=1&nofb=1&ipt=7c7ce6f62e0b4655d4415c7a339bff0f14a9ce9ae433fbc7d8c6421295b2a401&ipo=images" alt="Otius Web Solutions Logo" >
+              <span class="logo-name">Outis Web Solutions.</span>
+            </a>
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#welcome-section">About</a></li>
+              <li><a href="#projects">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>       
+            </ul>
+            <div class="menu-icon" id="menu-icon">
+              <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+  <main>
+          <!-- Main content of the webpage goes here -->
+  <section id="welcome-section">
+    <h1>I am Outis</h1>
+    <p>I Aspire to Create Web Solutions for Small Businesses & non-profits</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Work</h2>
+    <p>Checkout The Projects I've Worked On. Click to view or Explore My Code on GitHub.</p>
+
+    <!-- Attempting to make projects section consistent with overall layout--><!-- Added Container -->
+    <div class="container">
+      <div class="project-container">
+        <!-- project 1 -->    
+        <article class="project-item">
+          <img src="https://fitsmallbusiness.com/wp-content/uploads/2018/05/15-Best-Small-Business-Website-Examples.png" alt="Project 1 example web design" class="project-image">
+
+          <div class="project-info">
+            <h3 class="project-title">Project One</h3>
+             <p class="project-description">A description of the project. What it does, technologies used, challenges faced, etc.</p>
+            <a href="#" class="btn">Live Demo</a>             
+            <a href="#" class="btn">View Code</a>
+          </div>
+        </article>
+                      
+     
+                            <!-- Project 2 -->
+        <article class="project-item">
+          <img src="http://2.bp.blogspot.com/-ojmFtUQHYl0/VMFDCQlTjVI/AAAAAAAADwU/trHCPh7c-bY/s1600/magazine-tech-flatmag.jpg" alt="Project  2 example web design" class="project-image">
+          <div class="project-info">
+            <h3 class="project-title">Project Two</h3>
+            <p class="project-description">A description of the project. What it does, technologies used, challenges faced, etc.</p>
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn">View Code</a>
+           </div>
+        </article>
+  <!-- Project 3 -->
+        <article class="project-item">
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/dazzling-free-business-theme.jpg" alt="Project 3 example web design" class="project-image">
+          <div class="project-info">
+            <h3 class="project-title">Project Three</h3>
+            <p class="project-description">A description of the project. What it does, technologies used, challenges faced, etc.</p>
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn">View Code</a>
+          </div>
+        </article>
+        
+
+          <!-- project 4 -->    
+        <article class="project-item">
+          <img src="https://fitsmallbusiness.com/wp-content/uploads/2018/05/15-Best-Small-Business-Website-Examples.png" alt="Project 4 example web design" class="project-image">
+          <div class="project-info">
+            <h3 class="project-title">Project Four</h3>
+            <p class="project-description">A description of the project. What it does, technologies used, challenges faced, etc.</p>
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn">View Code</a>
+          </div>
+        </article>
+
+ <!-- project 5 -->    
+        <article class="project-item">
+          <img src="https://fitsmallbusiness.com/wp-content/uploads/2018/05/15-Best-Small-Business-Website-Examples.png" alt="Project 5 example web design" class="project-image">
+            <div class="project-info">
+              <h3 class="project-title">Project Five</h3>
+              <p class="project-description">A description of the project. What it does, technologies used, challenges faced, etc.</p>
+              <a href="#" class="btn">Live Demo</a>
+              <a href="#" class="btn">View Code</a>
+            </div>
+          </article>
+          
+        <!-- Project 6 -->
+          <article class="project-item">
+            <img src="http://2.bp.blogspot.com/-ojmFtUQHYl0/VMFDCQlTjVI/AAAAAAAADwU/trHCPh7c-bY/s1600/magazine-tech-flatmag.jpg" alt="Project 6 example web design" class="project-image">
+            <div class="project-info">
+            <h3 class="project-title">Project Six</h3>
+            <p class="project-description">A description of the project. What it does, technologies used, challenges faced, etc.</p>
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn">View Code</a>
+          </div>
+        </article>
+
+        <!-- Project 7 -->
+        <article class="project-item">
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/dazzling-free-business-theme.jpg" alt="Project 7 example web design" class="project-image">
+          <div class="project-info">
+            <h3 class="project-title">Project Seven</h3>
+            <p class="project-description">A description of the project. What it does, technologies used, challenges faced, etc.</p>
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn">View Code</a>
+          </div>
+        </article>
+          <!-- project 8 -->    
+        <article class="project-item">
+          <img src="https://fitsmallbusiness.com/wp-content/uploads/2018/05/15-Best-Small-Business-Website-Examples.png" alt="Project 8 example web design" class="project-image">
+          <div class="project-info">
+            <h3 class="project-title">Project Eight</h3>
+            <p class="project-description">A description of the project. What it does, technologies used, challenges faced, etc.</p>
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn">View Code</a>
+          </div>
+        </article>
+    </div>
+  </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to Work Together, have any questions or just want to reach out!</p>
+
+    <div class="container"> <!-- added container around form 1/10/25 for consistent display across screensizes-->
+    <form action="#change_path_backend.ext" method="POST">
+      <div>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="phone">Your Phone:  *Optional*</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+
+      <div>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="message">Send Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </div>
+    </form>
+    </div>
+    
+    <div class="contact-info">
+      <p><a href="mailto: yourEmail@example.com" >yourEmail@example.com</a></p>
+      <p><a href="#linkedin.com" >LinkedIn</a> and <a href="#github.com" >GitHub</a>.</p>
+    </div>
+  </section>
+
+</main>
+<footer id="footer">
+        <!-- Footer content goes here -->
+        <div class="footer-container">
+
+          <div class="footer-contact">
+            <h3>Contact Me</h3>
+            <p>If you'd like to work together feel free to reach out!</p>
+            <a href="mailto:yourMail@example.com" >Email Me</a>
+          </div>
+          <!-- footer with social links -->
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul
+              >
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#projects">Portfolio</a></li>
+              <li><a href="#https://yourGitHubProfile" target="_blank">GitHub</a></li>
+               <li><a href="#contact">Contact</a></li>
+
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h3>Follow Me</h3>
+            <ul>
+
+              <li><a href="#https://yourTwitterProfile" target="_blank" class="social-icon">Twitter</a></li>
+              <li><a href="#https://yourLinkedInProfile" target="_blank" class="social-icon">LinkedIn</a></li>
+              <li><a href="#https://yourGitHubProfile" target="_blank" class="social-icon">Github</a></li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Outis Web Solutions. All rights reserved.</p>
+        </div>
+       
+    </footer>
+
+    <script defer>
+      /*const menuIcon = document.getElementById('menu-icon');
+      const navLinks = document.querySelector('.nav-links');
+      menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active'); // Toggle Show / Hide Navbar links 
+      });*/
+      /* Why is this better than the Above? Also Why Would I Need a More Modular approach to mobile navigation (like react.js vue.js etc ..) if my site grows ???*/
+      document.getElementById('menu-icon').addEventListener('click', function(){
+        document.querySelector('.nav-links').classList.toggle('active');
+      });
+
+    </script>  
+</body>
+</html>
