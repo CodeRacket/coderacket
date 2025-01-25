@@ -1,0 +1,6 @@
+placeholder for blog directory. need asset directory for CSS, JS & Images for Blogs
+
+/blog{/blog-post[1-n].html, styles.css} 
+
+/blog/assets{/css/JS/Images} 
+        
