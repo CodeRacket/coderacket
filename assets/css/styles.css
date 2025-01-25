@@ -68,7 +68,7 @@ input, textarea, button {
 /* ====== Typography ====== */
 body {
   font-family: 'Arial', sans-serif; /* Default font */
-  /*font-size: 16px; /* Base font size  changed 01/12/25 */ */
+  /*font-size: 16px; /* Base font size  changed 01/12/25 */
   line-height: 1.5; /* Line height for readability */
   color: var(--text-color); /* Default text color */
   background-color: var(--background-color); /* Light background */
@@ -124,7 +124,7 @@ p {
 }
 
 /* Large Desktop Screens & Above */
-@media (min-width: 1200px;){
+@media (min-width: 1200px){
   .project-container{
     grid-template-columns: repeat(4, 1fr);
   }
