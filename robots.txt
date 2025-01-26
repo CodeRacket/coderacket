@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://outiswebsolutions.github.io/outis-web-solutions/sitemap.xml
