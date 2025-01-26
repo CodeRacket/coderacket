@@ -401,7 +401,7 @@ p {
 
 /* Display form as grid for responsiveness on various screens */
 form {
-  display: grid;
+  display: none; /* removed for static gitpages old_property_value = grid;*/
   gap: 20px;
   justify-items: center;
   max-width: 500px; /* ensure forms max-width is constrained to max 500px*/
