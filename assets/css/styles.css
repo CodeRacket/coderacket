@@ -170,7 +170,10 @@ p {
     margin: 10px 0;
     text-align: center;
   }
-    
+
+  .nav-links a{
+    padding: 1rem 1.5rem; /* Adjusted for Mobile */
+  }
   header .menu-icon{
     display: block; /* Show menu-icon for Mobile */
   }
@@ -238,7 +241,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center ;
-  padding: 20px;
+  padding: 1.5rem;
   background-color: var(--navbar-bg-color);
   color: var(--navbar-text-color);
 }
@@ -250,9 +253,9 @@ p {
 
 .navbar .logo img{
   width: auto;
-  height: 40px; /* give height dimension */
+  height: 3rem; /* give height dimension */
   max-width: 100%;
-  margin-right: 10px; /*  set margin between text & logo */
+  margin-right: 1rem; /*  set margin between text & logo */
 }
 .navbar .logo-name{
   /* configure text style */
@@ -267,9 +270,11 @@ p {
   list-style: none;
 }
 .nav-links li{
-  margin: 0 15px;
+  margin: 0 1rem;
 }
 .nav-links a{
+  display: inline-bock;
+  padding: 1rem 2rem;
   color: var(--navbar-text-color);
   font-size: 1.1rem;
   font-weight: 500;
