@@ -250,7 +250,7 @@ p {
 
 .navbar .logo img{
   width: auto;
-  height: 50px; /* give height dimension */
+  height: 40px; /* give height dimension */
   max-width: 100%;
   margin-right: 10px; /*  set margin between text & logo */
 }
