@@ -142,7 +142,10 @@ p {
 
 /* For Average Smart Phone Screens  */
 @media (max-width: 768px){
-
+  .navbar .logo img{
+    width: 100px; /* Explicitly Set*/
+    height: auto; 
+  }
   .project-container{
     grid-template-columns: repeat(1, 1fr); /* one item per row */
   }
@@ -210,6 +213,10 @@ p {
   
   /* for very small screens */
 @media (max-width: 480px) {
+  .navbar .logo img{
+    width: 80px; /* Explicitly Set*/
+    height: auto;
+  }
   body {
     font-size: 14px; /* Adjust font size for smaller screens */
   }
@@ -252,9 +259,10 @@ p {
 }
 
 .navbar .logo img{
-  width: 120px;
-  height: 100px;
-  object-fit: contain;
+  display: block;
+  width: 120px; /* Explicitly Set */
+  height: 100px; /* Explicitly Set */
+  object-fit: contain; /* Preserve aspect ratio*/
   margin-right: 1rem; /*  set margin between text & logo */
 }
 .navbar .logo-name{
