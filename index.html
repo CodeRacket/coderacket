@@ -40,8 +40,8 @@ Apple Touch Icon: The <link rel="apple-touch-icon" href="apple-touch-icon.png"> 
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" type="text/css" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 <!-- Preload Images reduces Load Times -->
-<link rel="preload" href="./assets/images/outiswebsolutionslogo.webp" as="image" type="image/webp" />
-<link rel="preload" href="./assets/images/outiswebsolutionslogo.png" as="image" type="image/png" />
+<link rel="preload" href="./assets/images/logo/outiswebsolutionslogo-1200x1061.webp" as="image" type="image/webp" />
+<link rel="preload" href="./assets/images/logo/outiswebsolutionslogo-1200x1061.png" as="image" type="image/png" />
     
 </head>
 
@@ -93,7 +93,12 @@ Apple Touch Icon: The <link rel="apple-touch-icon" href="apple-touch-icon.png"> 
           
           <!-- project 1 -->    
         <article class="project-item">
-          <img src="./assets/images/projects/placeholder.png" alt="Project 1 example web design" class="project-image">
+          <picture>
+            <source srcset="./assets/images/projects/placeholder-1200x1000.webp, ./assets/images/projects/placeholder-768x640.webp, ./assets/images/projects/placeholder-480x400.webp " type="image/webp" />
+            <source srcset="./assets/images/projects/placeholder-1200x1000.png, ./assets/images/projects/placeholder-768x640.png, ./assets/images/projects/placeholder-480x400.png" type="image/png"/>
+            <img src="./assets/images/projects/placeholder.png" alt="Project 1 example web design" class="project-image" loading="lazy">    
+          </picture>  
+          
           <div class="project-info">
             <h3 class="project-title">Project One</h3>
              <p class="project-description">A description of the project. What it does, technologies used, challenges faced, etc.</p>
