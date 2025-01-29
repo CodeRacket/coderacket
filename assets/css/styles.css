@@ -143,8 +143,8 @@ p {
 /* For Average Smart Phone Screens  */
 @media (max-width: 768px){
   .navbar .logo img{
-    width: 80px; /* Explicitly Set*/
-    height: auto; 
+    width: auto; /* Explicitly Set*/
+    height: 60px; 
   }
   .project-container{
     grid-template-columns: repeat(1, 1fr); /* one item per row */
