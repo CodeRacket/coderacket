@@ -252,9 +252,9 @@ p {
 }
 
 .navbar .logo img{
-  width: 3rem;
-  height: 3rem;
-  
+  width: 120px;
+  height: 100px;
+  object-fit: contain;
   margin-right: 1rem; /*  set margin between text & logo */
 }
 .navbar .logo-name{
