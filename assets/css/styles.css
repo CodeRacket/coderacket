@@ -276,7 +276,7 @@ p {
 .nav-links {
   display: flex;
   list-style: none;
-  padding-top: 30px;
+  margin-top: 50px !important;
 }
 .nav-links li{
   margin: 0 1rem;
