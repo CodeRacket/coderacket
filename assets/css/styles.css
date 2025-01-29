@@ -261,8 +261,8 @@ p {
 
 .navbar .logo img{
   display: block;
-  width: 100px; /* Explicitly Set */
-  height: 80px; /* Explicitly Set */
+  width: 120px; /* Explicitly Set */
+  height: 100px; /* Explicitly Set */
   object-fit: contain; /* Preserve aspect ratio*/
   margin-right: 1rem; /*  set margin between text & logo */
 }
@@ -529,6 +529,3 @@ form button:hover{
   text-align: center;
   font-size:0.9rem;
 }
-
-/* changes labeled px-conv means converting pixel unit for rendering */
-/* changes made from 1/12/25 - 1/xx/25 */
