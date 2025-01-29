@@ -262,7 +262,7 @@ p {
 .navbar .logo img{
   display: block;
   width: 100px; /* Explicitly Set */
-  height: 40px; /* Explicitly Set */
+  height: 80px; /* Explicitly Set */
   object-fit: contain; /* Preserve aspect ratio*/
   margin-right: 1rem; /*  set margin between text & logo */
 }
