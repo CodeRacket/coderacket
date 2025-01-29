@@ -142,10 +142,6 @@ p {
 
 /* For Average Smart Phone Screens  */
 @media (max-width: 768px){
-  .navbar .logo img{
-    width: auto; /* Explicitly Set*/
-    height: 40px; 
-  }
   .project-container{
     grid-template-columns: repeat(1, 1fr); /* one item per row */
   }
@@ -166,8 +162,13 @@ p {
     left: 0;
     padding: 10px 0;
   }
+    .navbar .logo img{
+    width: auto; /* Explicitly Set*/
+    height: 40px; 
+  }
   .nav-links.active{
-    display: flex ;
+    display: flex;
+    margin-top: 5px;
     
   }
   .nav-links li{
@@ -214,10 +215,6 @@ p {
   
   /* for very small screens */
 @media (max-width: 480px) {
-  .navbar .logo img{
-    width: auto; /* Explicitly Set*/
-    height: 60px;
-  }
   body {
     font-size: 14px; /* Adjust font size for smaller screens */
   }
