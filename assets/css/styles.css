@@ -252,7 +252,7 @@ p {
 }
 
 .navbar .logo img{
-  width: 100px;
+  width: auto;
   height: 40px;
   margin-right: 1rem; /*  set margin between text & logo */
 }
