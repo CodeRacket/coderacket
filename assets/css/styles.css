@@ -164,7 +164,7 @@ p {
   }
     .navbar .logo img{
     width: auto; /* Explicitly Set*/
-    height: 50px; 
+    height: 40px; 
   }
   .nav-links.active{
     display: flex;
