@@ -252,8 +252,8 @@ p {
 }
 
 .navbar .logo img{
-  width: auto;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
   margin-right: 1rem; /*  set margin between text & logo */
 }
 .navbar .logo-name{
