@@ -39,6 +39,9 @@ Apple Touch Icon: The <link rel="apple-touch-icon" href="apple-touch-icon.png"> 
 <!-- FontAwesome is Awesome -->
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" type="text/css" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<!-- Preload Images reduces Load Times -->
+<link rel="preload" href="./assets/images/outiswebsolutionslogo.webp" as="image" type="image/webp" />
+<link rel="preload" href="./assets/images/outiswebsolutionslogo.png" as="image" type="image/png" />
     
 </head>
 
@@ -52,9 +55,10 @@ Apple Touch Icon: The <link rel="apple-touch-icon" href="apple-touch-icon.png"> 
             <a href="#" class="logo">
                     <!-- WebP image support for browsers -->
               <picture>
-                  <source srcset="./assets/images/outiswebsolutionslogo.webp" type="image/webp"
+                  <source srcset="./assets/images/outiswebsolutionslogo-1200x1061.webp, ./assets/images/outiswebsolutionslogo-768x679.webp, ./assets/images/outiswebsolutionslogo-480x430.webp " type="image/webp">
+                  <source srcset="./assets/images/outiswebsolutionslogo-1200x1061.png, ./assets/images/outiswebsolutionslogo-768x679.png, ./assets/images/outiswebsolutionslogo-480x430.png " type="image/png">
                   <!-- keep this for backward compatibility -->
-                  <img src="./assets/images/outiswebsolutionslogo.gif" alt="Outis Web Solutions Logo" class="logo-img" >
+                  <img src="./assets/images/outiswebsolutionslogo-768x679.png" alt="Outis Web Solutions Logo" class="logo-img" loading="lazy">
               </picture>
             
               <span class="logo-name">Outis Web Solutions.</span>
