@@ -214,8 +214,8 @@ p {
   /* for very small screens */
 @media (max-width: 480px) {
   .navbar .logo img{
-    width: 60px; /* Explicitly Set*/
-    height: auto;
+    width: auto; /* Explicitly Set*/
+    height: 60px;
   }
   body {
     font-size: 14px; /* Adjust font size for smaller screens */
