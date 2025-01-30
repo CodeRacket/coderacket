@@ -178,6 +178,10 @@ p {
 
   .nav-links a{
     padding: 1rem 1.5rem; /* Adjusted for Mobile */
+    min-width:44px;
+    min-height: 44px;
+    display: inline-block;
+    line-height: 44px;
   }
   header .menu-icon{
     display: block; /* Show menu-icon for Mobile */
