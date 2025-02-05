@@ -1,5 +1,5 @@
-# outis-web-solutions
-Outis Web Solutions  - Personal Portfolio
+# CodeRacket
+CodeRacket  - Personal Portfolio
 This repository contains source code for my portfolio website with a purpose of show casing
 my freelance web development services. 
 The site uses a Responsive Design Targeted for:
