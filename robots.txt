@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://outiswebsolutions.github.io/outis-web-solutions/sitemap.xml
+Sitemap: https://coderacket.github.io/coderacket/sitemap.xml
