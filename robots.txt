@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://coderacket.github.io/coderacket/sitemap.xml
+Sitemap: https://coderacket.com/sitemap.xml
