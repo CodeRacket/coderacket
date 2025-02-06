@@ -1,0 +1,497 @@
+/* ====== Configuring CSS variables for better code reuse ====== */
+:root{
+    /* Basic Color Variables  */
+    --primary-color: #3498db; /* Blue */
+    --old-navbar-hover-color: #0056b3; /* old color for hover effect on nav-links erase this someday*/
+    --secondary-color: #4CAF50; /* Green */
+    --hover-color: #45a049; /* Darker Green for hover */
+    --text-color: #333; /*Dark text color */
+    --background-color: #f9f9f9; /* Light Background Color */
+  
+    /* NavBar color variables */
+    --navbar-bg-color: #333; /* Dark Background NavBar */
+    --navbar-text-color: white; /* NavBar text color */
+    
+    /* Footer color variables  */
+    --footer-bg-color:#333; /* footer background color  */
+    --footer-text-color: white; /* Footer Text Color */
+    /* Projects color variables */
+    --projects-item-bg-color: #fff; /* Projects border item background */
+    --projects-item-border-color: #ddd; /* Projects border background */
+    --projects-item-hover-scale: 1.05; /* Projects hover scale for items */
+  
+    /* Button color variables */
+    --button-bg-color: #4CAF50; /* background for buttons */
+    --button-hover-bg-color: #45a049; /* hover effect color for buttons */
+  
+    /* Social Icons Color Variable */
+    --social-icon-hover-color: #4CAF50; /* Hover effect color for social icons */
+  
+    /* Link color variables */
+    --link-hover-color: #4CAF50; /* hover effect color for links */
+    --link-color: #555; /* obviously default link color */
+    /* If i have to define another css variable ill be Quiting this work 0_o */
+  
+  
+  } 
+  
+  /* ====== Reset / Normalize ====== */
+  /* Basic Reset to reduce browser inconsistencies */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes width/height include padding/border */
+  }
+  
+  /* Remove default list styling */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove default links styling */
+  a {
+    text-decoration: none;  
+    color: inherit;
+  }
+  
+  /* Remove default form element styles */
+  input, textarea, button {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+  }
+  
+  /* ====== Typography ====== */
+  body {
+    font-family: 'Arial', 'Helvetica', sans-serif; /* Default font */
+    /*font-size: 16px; /* Base font size  changed 01/12/25 */
+    line-height: 1.5; /* Line height for readability */
+    color: var(--text-color); /* Default text color */
+    background-color: var(--background-color); /* Light background */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em; /* Spacing below headings */
+    font-weight: bold;
+  }
+  
+  p {
+    margin-bottom: 1em; /* Spacing below paragraphs */
+  }
+  
+  /* ====== Layout & Container ====== */
+  .container {
+    width: 100%;
+    max-width: 1200px; /* Max width for large screens */
+    margin: 0 auto; /* Center container */
+    
+  }
+  
+  /* Flexbox utility (optional for modern layouts) */
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* Using Sticky with FlexBox Display*/
+  .sticky-flexbox {
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 0;
+    align-self: flex-start;/* <-- this is the fix */
+    /*background-color: red;*/  /* Not necessary -- for example only */
+  }
+  
+  /* Center an element vertically and horizontally */
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /* ====== Media Queries for Responsiveness ====== */
+  
+  /* Small to Medium Desktops, Tablets in landscape */
+  @media (min-width:992px) and (max-width:1199px){
+    
+  }
+  
+  /* Large Desktop Screens & Above */
+  @media (min-width: 1200px){
+    .container{
+      padding:0 30px; /* More Padding for Larger Screens */
+    }
+  }
+  
+  @media (max-width: 1200px) {  
+    .container {
+      padding: 0 20px;
+    }
+  
+  }
+  
+  /* For Average Smart Phone Screens  */
+  @media (max-width: 768px){
+    /* Example: Stacking elements on smaller screens */
+    .flex {
+      flex-direction: column;
+    }
+      /* Responsive NavBar */
+    header .nav-links {
+      display: none ;
+      width: 100% ; 
+      flex-direction: column;
+      background-color: var(--navbar-bg-color);
+      position: absolute;
+      top: 25px;
+      left: 0;
+      padding: 10px 0;
+    }
+      .navbar .logo img{
+      width: 100%; 
+      height: auto; 
+      max-height: 40px;
+    }
+    .nav-links.active{
+      display: flex;
+      margin-top: 60px;
+      
+    }
+    .nav-links li{
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .nav-links a{
+      padding: 1rem 1.5rem; /* Adjusted for Mobile */
+      min-width:44px;
+      min-height: 44px;
+      display: inline-block;
+      line-height: 44px;
+    }
+    header .menu-icon{
+      display: block; /* Show menu-icon for Mobile */
+    }
+      
+  /* Mobile Welcome Section*/
+    main #welcome-section h1{
+      font-size: 2rem ; /* Slightly Smaller Text for Mobile */     
+    }
+    main #welcome-section p{
+      font-size: 1rem ; /* make text smaller for mobile */
+      width: 90%; /* allow more width for mobile screens*/
+    }
+  
+    /* Mobile Footer Section */
+    .footer-container{
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer-container div{
+      margin-bottom: 1.5rem;
+    }
+    .footer-container a{
+      padding: 0.75rem 1.5rem;
+      /* for touch targets in footer*/
+      min-width: 44px;
+      min-height: 44px; 
+      display: inline-block;
+      line-height: 44px; 
+      text-decoration: none;
+    }
+    .footer-container a:hover{
+      color: var(--primary-color); 
+    }
+    /* Form fine tuning */
+    form {
+      gap: 15px; /* Slightly smaller Gap for mobile screens*/
+    }
+   
+    form div{
+      width: 100%;
+    }
+    .btn{
+      width: 100%;
+      margin-bottom: 1.3rem;
+    }
+  
+      /* end of media query for the Average Screen Size */
+  }
+    
+    /* for very small screens */
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  
+    .container {
+      padding: 0 10px; /* Less padding for smaller screens */
+    }
+  
+    form {
+      gap: 10px; /* less gap for very small screens*/
+    }
+    .btn{
+      margin-bottom: 2.0rem;
+    }
+  
+    /* End of media query for very small screens*/
+  }
+  
+  /* ====== Utility Classes ====== */
+  /* Helper classes for margin and padding */
+  .mt-1 { margin-top: 1rem; }
+  .mb-1 { margin-bottom: 1rem; }
+  .pt-1 { padding-top: 1rem; }
+  .pb-1 { padding-bottom: 1rem; }
+  
+  .text-center { text-align: center; }
+  .text-right { text-align: right; }
+  
+  
+  /* Default Navbar styling section */
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 1.5rem;
+    background-color: var(--navbar-bg-color);
+    color: var(--navbar-text-color);
+  }
+  /* creates flexbox display for log items */
+  .navbar .logo{
+    display: flex;
+    align-items: center; /* obviously  center the items */
+  }
+  
+  .navbar .logo img{
+    display: block;
+    width: 120px; /* Explicitly Set */
+    height: 100px; /* Explicitly Set */
+    object-fit: contain; /* Preserve aspect ratio*/
+    margin-right: 1rem; /*  set margin between text & logo */
+  }
+  .navbar .logo-name{
+    /* configure text style */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase; 
+    color: var(--navbar-text-color);
+  
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  .nav-links li{
+    margin: 0 1rem;
+  }
+  .nav-links a{
+    display: inline-bock;
+    padding: 1rem 2rem;
+    color: var(--navbar-text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover{
+    color: var(--primary-color);
+  }
+  /* mobile menu icon */
+  .menu-icon{
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  /* End Default NavBar Section */
+  
+  
+  /* Buttons Styling*/
+  .btn{
+    background-color: var(--button-bg-color);
+    color: var(--navbar-text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  .btn:hover{
+    background-color: var(--button-hover-bg-color);
+  }
+  
+  /* footer buttons */
+  .footer-btn{
+    background-color: var(--secondary-color);
+    color: var(--footer-text-color);
+    padding: 0.8rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+  }
+  .footer-btn:hover{
+    background-color: var(--button-hover-color);
+  }
+  
+  /* Social Icons section*/
+  .social-icon{
+    color: var(--footer-text-color);
+    margin-right: 1rem;
+  }
+  .social-icon:hover{
+    color: var(--social-icon-hover-color);
+  }
+  .icon-lazy{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .icon-lazy-loaded{
+    opacity: 1;
+  }
+  
+  /* Contact Form Section */
+  #contact {
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--background-color);
+  }
+  
+   #contact h2{
+    font-size: 2rem; 
+    margin-bottom: 1rem;
+  }
+  #contact p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  /* Display form as grid for responsiveness on various screens */
+  form {
+    display: none; /* removed for static gitpages old_property_value = grid;*/
+    gap: 20px;
+    justify-items: center;
+    max-width: 500px; /* ensure forms max-width is constrained to max 500px*/
+    margin: 0 auto; /*center form*/ 
+    width: 100%;
+  }
+  form div{
+    width: 100%;
+    /* max-width: 500px; /* Restrict width, avoids stretching on larger screens */
+  }
+  form label{ font-weight: bold;}
+  
+  form input, form textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    margin-top: 5px;
+  }
+  form button{
+    background-color: var(--button-bg-color);
+    padding: 12px 20px;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  form button:hover{
+    background-color: var(--button-hover-bg-color);
+  }
+  .contact-info a {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  .contact-info a i{
+    margin-right: 0.5rem;
+    font-size:1.125rem;
+  }
+  .contact-info a:hover{
+    text-decoration: underline;
+  }
+  .contact-info a i:hover {
+    color: #45a049;;  /* Change color on hover if desired */
+  }
+  
+  /* Welcome Section Styling */
+  #welcome-section{
+    /* Display & Positioning Elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    /* [*] End ... [*]*/
+    /* Define Color, Dimensions */
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    
+    /*[*] END [*]*/
+  }
+  #welcome-section h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    
+  }
+  #welcome-section p{
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto; 
+    line-height: 1.6;
+  }
+  
+  /* Footer Styling */
+  #footer{
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .footer-container{
+    display: flex; /* display horizontal layout for larger screens 
+                    */
+    justify-content: space-between; /* Align from left & right container for larger screens 
+                            */
+    align-items: flex-start; /* align content left on smaller screens*/
+    flex-wrap: wrap; /* items remain left aligned but wrap to the next line underneath if it runs out of space */
+    margin-bottom: 1rem;
+  }
+  .footer-container div{
+    flex: 1; /* all footer divs take up equal-space and placed next to one another with 1rem or 10px space between */
+    margin: 1rem;
+  }
+  
+  .footer-container h3{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .footer-container ul{
+    list-style: none;
+    padding: 0;
+  }
+  .footer-container a{
+    color: var(--footert-text-color);
+    text-decoration: none;
+  }
+  .footer-container a:hover{
+    color: var(--social-icon-hover-color); /* light green*/
+  }
+  .footer-bottom{
+    padding: 1rem;
+    background-color: #222;
+    text-align: center;
+    font-size:0.9rem;
+  }
