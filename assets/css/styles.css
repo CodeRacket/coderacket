@@ -467,8 +467,6 @@ form button:hover{
 .contact-info a {
   color: var(--secondary-color);
   text-decoration: none;
-  display: flex;
-  align-items: center;
 }
 .contact-info a i{
   margin-right: 0.5rem;
