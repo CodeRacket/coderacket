@@ -1,6 +1,6 @@
 // this file loads icons once in 10% visitors viewport
 const icons = document.querySelectorAll('.icon-lazy');
-const observer = IntersectionObserver((entries, observer) => {
+const observer = new IntersectionObserver((entries, observer) => {
   enteries.forEach(entry => {
     // Check if icon is in viewport
     if(entery.isIntersecting){
