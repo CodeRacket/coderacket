@@ -226,7 +226,7 @@ p {
   }
   .btn{
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
   }
 
     /* end of media query for the Average Screen Size */
@@ -244,6 +244,9 @@ p {
 
   form {
     gap: 10px; /* less gap for very small screens*/
+  }
+  .btn{
+    margin-bottom: 2.0rem;
   }
 
   /* End of media query for very small screens*/
