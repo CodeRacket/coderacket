@@ -5,7 +5,7 @@ const observer = new IntersectionObserver((entries, observer) => {
     // Check if icon is in viewport
     if(entry.isIntersecting){
       // Make icon visible if in viewport
-      entries.target.classList.add('icon-loaded');
+      entry.target.classList.add('icon-loaded');
       // Then stop monitoring the icons once loaded
       observer.unobserve(entry.target);  
         
