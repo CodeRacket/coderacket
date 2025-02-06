@@ -121,9 +121,6 @@ p {
   .project-container{
     grid-template-columns: repeat(3, 1fr);
   }
-  .btn{
-    width: 100%;
-  }
 }
 
 /* Large Desktop Screens & Above */
@@ -155,7 +152,6 @@ p {
   }
     /* Responsive NavBar */
   header .nav-links {
-    /* Had to use overrides */
     display: none ;
     width: 100% ; 
     flex-direction: column;
@@ -230,7 +226,7 @@ p {
   }
   .btn{
     width: 100%;
-   
+    margin-bottom: 15px;
   }
 
     /* end of media query for the Average Screen Size */
@@ -249,7 +245,7 @@ p {
   form {
     gap: 10px; /* less gap for very small screens*/
   }
-  
+
   /* End of media query for very small screens*/
 }
 
