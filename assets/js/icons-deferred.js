@@ -3,7 +3,7 @@ const icons = document.querySelectorAll('.icon-lazy');
 const observer = new IntersectionObserver((entries, observer) => {
   enteries.forEach(entry => {
     // Check if icon is in viewport
-    if(entery.isIntersecting){
+    if(entry.isIntersecting){
       // Make icon visible if in viewport
       enteries.target.classList.add('icon-loaded');
       // Then stop monitoring the icons once loaded
