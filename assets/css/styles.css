@@ -121,6 +121,9 @@ p {
   .project-container{
     grid-template-columns: repeat(3, 1fr);
   }
+  .btn{
+    width: 100%;
+  }
 }
 
 /* Large Desktop Screens & Above */
