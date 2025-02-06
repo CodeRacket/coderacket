@@ -410,6 +410,13 @@ p {
 .social-icon:hover{
   color: var(--social-icon-hover-color);
 }
+.icon-lazy{
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.icon-lazy-loaded{
+  opacity: 1;
+}
 
 /* Contact Form Section */
 #contact {
