@@ -273,8 +273,8 @@
   
   .navbar .logo img{
     display: block;
-    width: 15rem; /* Explicitly Set */
-    height: 10rem; /* Explicitly Set */
+    width: 120px; /* Explicitly Set */
+    height: 100px; /* Explicitly Set */
     max-height: 10rem;
     object-fit: contain; /* Preserve aspect ratio*/
     margin-right: 1rem; /*  set margin between text & logo */
