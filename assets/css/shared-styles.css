@@ -275,7 +275,8 @@
     height: 12rem; /* Explicitly Set */
     object-fit: contain; /* Preserve aspect ratio*/
     margin-right: 1rem; /*  set margin between text & logo */
-      border-radius: 2rem;
+    border-radius: 2rem;
+    background-size: contain;
   }
   .nav-links {
     display: flex;
