@@ -274,7 +274,8 @@
   .navbar .logo img{
     display: block;
     width: 15rem; /* Explicitly Set */
-    height: 12rem; /* Explicitly Set */
+    height: 10rem; /* Explicitly Set */
+    max-height: 10rem;
     object-fit: contain; /* Preserve aspect ratio*/
     margin-right: 1rem; /*  set margin between text & logo */
     border-radius: 2rem;
