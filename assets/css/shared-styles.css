@@ -154,7 +154,7 @@
       .navbar .logo img{
       width: 100%; 
       height: auto; 
-      max-height: 10rem;
+      max-height: 12rem;
     }
     .nav-links.active{
       display: flex;
@@ -180,6 +180,7 @@
   /* Mobile Welcome Section*/
     main #welcome-section h1{
       font-size: 2rem ; /* Slightly Smaller Text for Mobile */     
+      margin-right: 5px;
     }
     main #welcome-section p{
       font-size: 1rem ; /* make text smaller for mobile */
