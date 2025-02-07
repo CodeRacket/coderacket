@@ -271,19 +271,11 @@
   
   .navbar .logo img{
     display: block;
-    width: 120px; /* Explicitly Set */
-    height: 100px; /* Explicitly Set */
+    width: 15rem; /* Explicitly Set */
+    height: 12rem; /* Explicitly Set */
     object-fit: contain; /* Preserve aspect ratio*/
     margin-right: 1rem; /*  set margin between text & logo */
       border-radius: 2rem;
-  }
-  .navbar .logo-name{
-    /* configure text style */
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase; 
-    color: var(--navbar-text-color);
-  
   }
   .nav-links {
     display: flex;
