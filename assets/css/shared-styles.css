@@ -155,7 +155,7 @@
       .navbar .logo img{
       width: 100%; 
       height: auto; 
-      max-height: 40px;
+      max-height: 5rem;
     }
     .nav-links.active{
       display: flex;
