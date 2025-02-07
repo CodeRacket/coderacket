@@ -275,6 +275,7 @@
     height: 100px; /* Explicitly Set */
     object-fit: contain; /* Preserve aspect ratio*/
     margin-right: 1rem; /*  set margin between text & logo */
+      border-radius: 2rem;
   }
   .navbar .logo-name{
     /* configure text style */
