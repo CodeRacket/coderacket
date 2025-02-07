@@ -267,15 +267,15 @@
   /* creates flexbox display for log items */
   .navbar .logo{
     display: flex;
-    align-items: center; /* obviously  center the items */
+    align-items: center; 
     background-size: contain;
   }
   
   .navbar .logo img{
     display: block;
-    width: 120px; /* Explicitly Set */
-    height: 100px; /* Explicitly Set */
-    max-height: 10rem;
+    width: 100%;
+    max-width: 120px; /* Explicitly Set */
+    height: auto;
     object-fit: contain; /* Preserve aspect ratio*/
     margin-right: 1rem; /*  set margin between text & logo */
     border-radius: 2rem;
@@ -298,6 +298,9 @@
   
   .nav-links a:hover{
     color: var(--primary-color);
+  }
+  .nav-links a:focus{
+      outline: 2px solid var(--primary-color); /* Accessible Focus State */
   }
   /* mobile menu icon */
   .menu-icon{
