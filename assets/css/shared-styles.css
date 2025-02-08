@@ -286,6 +286,7 @@
     margin-right: 1rem; /*  set margin between text & logo */
     border-radius: 2rem;
     position: relative;
+    top: 1rem;
     
   }
   .nav-links {
