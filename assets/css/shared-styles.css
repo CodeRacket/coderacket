@@ -275,6 +275,7 @@
     background-size: contain;
     padding: 0.5rem;
     position: relative;
+    overflow: hidden;
   }
   
   .navbar .logo img{
@@ -287,7 +288,6 @@
     border-radius: 2rem;
     position: relative;
     top: 1rem;
-    overflow: hidden;
   }
   .nav-links {
     display: flex;
