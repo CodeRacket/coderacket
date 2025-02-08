@@ -265,8 +265,7 @@
     background-color: var(--navbar-bg-color);
     color: var(--navbar-text-color);
     max-height: 8rem;
-    
-    
+    overflow: hidden;
   }
   /* creates flexbox display for log items */
   .navbar .logo{
