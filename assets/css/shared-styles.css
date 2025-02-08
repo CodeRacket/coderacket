@@ -273,6 +273,7 @@
     align-items: center; 
     background-size: contain;
     padding: 0.5rem;
+    top: 10px;
   }
   
   .navbar .logo img{
@@ -283,7 +284,6 @@
     object-fit: contain; /* Preserve aspect ratio*/
     margin-right: 1rem; /*  set margin between text & logo */
     border-radius: 2rem;
-    top: 2rem !important;
   }
   .nav-links {
     display: flex;
