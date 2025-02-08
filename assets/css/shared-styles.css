@@ -275,7 +275,7 @@
     background-size: contain;
     padding: 0.5rem;
     position: relative;
-    overflow: hidden;
+    overflow: hidden !important;
   }
   
   .navbar .logo img{
