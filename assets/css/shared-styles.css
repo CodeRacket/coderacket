@@ -266,7 +266,7 @@
     color: var(--navbar-text-color);
     max-height: 8rem;
     overflow: hidden;
-    position: relative;
+    
   }
   /* creates flexbox display for log items */
   .navbar .logo{
@@ -285,6 +285,7 @@
     object-fit: contain; /* Preserve aspect ratio*/
     margin-right: 1rem; /*  set margin between text & logo */
     border-radius: 2rem;
+    position: relative;
     top: 1rem;
   }
   .nav-links {
