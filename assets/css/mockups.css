@@ -1,1 +1,20 @@
+.mockup-page{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.mockup-detail{
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.mockup-gallery{}
+
+.mockup-image{}
+
+@media(max-width: 768px){}
+
 
