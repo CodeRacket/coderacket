@@ -22,7 +22,11 @@
   color: #7f8c8d;
 }
 .mockup-gallery{
-  
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .mockup-image{}
