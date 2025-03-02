@@ -24,13 +24,15 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png"> <!-- ... Favicon: Serve different icon formats for various devices (e.g., a 32x32 pixel .ico for desktop, .png for Apple touch icons, etc.)-->
 
     <!-- External CSS (optional, can link to stylesheets here) -->
+    <link rel="preload" href="/assets/css/shared-styles.css" as="style" type="text/css" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/shared-styles.css">
+    <link rel="preload" href="/assets/css/mockups.css.css" as="style" type="text/css" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/mockups.css">
     <!-- FontAwesome is Awesome -->
     <link rel="preload" href="/assets/css/fontawesome.css" as="style">
     <link rel="stylesheet" href="/assets/css/fontawesome.css">
     <!-- Preload Images reduces Load Times -->
-    <link rel="preload" href="./assets/images/logos/coderacket-logo-768w.webp" as="image" type="image/webp" >
+    <link rel="preload" href="/assets/images/logos/coderacket-logo-768w.webp" as="image" type="image/webp" >
 </head>
 <body>
   <header class="sticky-flexbox">
@@ -142,7 +144,7 @@
         </div>
        
     </footer>
-    <script src="/assets/js/icons-deferred.js"></script>
-    <script src="/assets/js/main.js"></script>  
+    <script src="/assets/js/icons-deferred.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>  
 </body>
 </html>
