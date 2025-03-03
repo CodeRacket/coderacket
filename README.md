@@ -23,9 +23,9 @@ Portfolio of My Work.
 Contact Form Section.
 Links to Accounts - GitHub, Email & Social Media
 
-Live Site with Github Pages : https://outiswebsolutions.github.io/outis-web-solutions 
+Live Site with Github Pages : https://coderacket.com
 
-Questions? Email me anytime. outiswebsolutions@gmail.com
+Questions? Email me anytime. contact@coderacket.com
 
 
 
