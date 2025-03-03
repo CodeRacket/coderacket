@@ -104,6 +104,41 @@
         <h2>Navigation Design</h2>
         <p>Designed with usability in mind, the navigation features clear categories and quick access to key sections like "Bouquets", "Arrangements", and "Contact Us".</p>
     </section> 
+
+    <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to Work Together, have any questions or just want to reach out!</p>
+
+    <div class="container"> <!-- added container around for consistent display across screensizes-->
+    <form action="#" method="POST">
+      <div>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="phone">Your Phone:  *Optional*</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+
+      <div>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="message">Send Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </div>
+    </form>
+    </div>
+    
+    <div class="contact-info">
+      <p><a href="mailto:contact@coderacket.com" ><i class="icon-lazy fas fa-envelope" aria-hidden="true"></i><span class="fa-sr-only">Email</span>Contact@CodeRacket.com</a></p>
+      <p><a href="https://www.linkedin.com/in/nathaniel-andreano-668676348/" ><i class="icon-lazy fab fa-linkedin" aria-hidden="true"></i><span class="fa-sr-only">Linkedin</span>LinkedIn</a> and <a href="https://github.com/coderacket" ><i class="icon-lazy fab fa-github" aria-hidden="true"></i><span class="fa-sr-only">Github</span>GitHub</a>.</p>
+    </div>
+  </section>
+
 </main>    
 <footer id="footer">
         <!-- Footer content goes here -->
