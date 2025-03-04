@@ -76,16 +76,16 @@
     max-width: 100%;
   }
   .mockup-gallery picture img{
-    max-width: 100%; /* No Image Overflow */
-  }
-  .mockup-image{
-    width: 700px;
+    width: 100%; /* No Image Overflow */
+    max-width: 100%; /* Properly size image within container */
+    
   }
 }
 
 @media(max-width: 480px){
   .mockup-image{
-    width: 400px;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
