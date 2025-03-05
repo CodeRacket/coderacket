@@ -56,7 +56,7 @@
   object-fit: contain; /* maintains images inside container with no distortion */
   display: block;
   margin: auto 0;
-  
+  text-align: center;  
 }
 
 .mockup-detail h2{
