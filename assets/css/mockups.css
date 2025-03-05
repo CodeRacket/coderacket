@@ -72,7 +72,7 @@
 
 @media (min-width: 1024px) and (max-width:1440px){
   .mockup-image{
-    text-align: center;
+    margin: auto;
     max-width: 800px;
   }
 }
