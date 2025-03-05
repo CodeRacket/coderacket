@@ -56,7 +56,6 @@
   object-fit: contain; /* maintains images inside container with no distortion */
   display: block;
   margin: auto 0;
-  text-align: center;  
 }
 
 .mockup-detail h2{
@@ -73,6 +72,7 @@
 
 @media (min-width: 1024px) and (max-width:1440px){
   .mockup-image{
+    text-align: center;
     max-width: 800px;
   }
 }
