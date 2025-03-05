@@ -29,6 +29,9 @@
 .mockup-detail p {
   font-size: 1rem;
   color: #7f8c8d;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
 }
 .mockup-gallery{
   margin: 2rem 0;
