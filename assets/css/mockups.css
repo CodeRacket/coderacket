@@ -36,6 +36,7 @@
   justify-content: center;
   width: 100%;
   text-align: center;
+  align-items: center;
 }
 .mockup-gallery picture{
   width: 100%;
