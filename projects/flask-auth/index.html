@@ -49,13 +49,23 @@
   <section class="max-w-6xl mx-auto px-4 py-16">
     <h2 class="text-3xl font-bold mb-8 text-center">Project Screenshots</h2>
     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
+      
+      <!-- Homepage -->
+       <article class="bg-white p-4 rounded-lg shadow">
+        <picture>
+          <source srcset="screenshots/flask_home-480w.webp 480w, screenshots/flask_home-768w.webp 768w, screenshots/flask_home-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
+          <source srcset="screenshots/flask_home-480w.jpg 480w, screenshots/flask_home-768w.jpg 768w, screenshots/flask_home-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
+          <img src="screenshots/flask_home-768w.jpg" alt="Flask login form with username and password fields" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        </picture>
+        <p class="mt-2 text-sm text-gray-600 text-center">Homepage linking to registration and login forms.</p> 
+      </article>
+      
       <!-- Registration Form -->
       <article class="bg-white p-4 rounded-lg shadow">
         <picture>
-          <source srcset="screenshots/flask-register-form-480w.webp 480w, screenshots/flask-register-form-768w.webp 768w, screenshots/flask-register-form-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
-          <source srcset="screenshots/flask-register-form-480w.jpg 480w, screenshots/flask-register-form-768w.jpg 768w, screenshots/flask-register-form-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
-          <img src="screenshots/flask-register-form-768w.jpg" alt="Flask registration form requiring unique username and email" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+          <source srcset="screenshots/flask_coderacket_registration-480w.webp 480w, screenshots/flask_coderacket_registration-768w.webp 768w, screenshots/flask_coderacket_registration-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
+          <source srcset="screenshots/flask_coderacket_registration-480w.jpg 480w, screenshots/flask_coderacket_registration-768w.jpg 768w, screenshots/flask_coderacket_registration-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
+          <img src="screenshots/flask_coderacket_registration-768w.jpg" alt="Flask registration form requiring unique username and email" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
         </picture>
         <p class="mt-2 text-sm text-gray-600 text-center">Registration form with server-side checks for unique email and username.</p>
       </article>
@@ -63,9 +73,20 @@
       <!-- Registration Error -->
       <article class="bg-white p-4 rounded-lg shadow">
         <picture>
-          <source srcset="screenshots/flask-register-error-480w.webp 480w, screenshots/flask-register-error-768w.webp 768w, screenshots/flask-register-error-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
-          <source srcset="screenshots/flask-register-error-480w.jpg 480w, screenshots/flask-register-error-768w.jpg 768w, screenshots/flask-register-error-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
-          <img src="screenshots/flask-register-error-768w.jpg" alt="Red flash message when email or username is not unique" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+          <source srcset="screenshots/flask-register-error-email-480w.webp 480w, screenshots/flask-register-error-email-768w.webp 768w, screenshots/flask-register-error-email-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
+          <source srcset="screenshots/flask-register-error-email-480w.jpg 480w, screenshots/flask-register-error-email-768w.jpg 768w, screenshots/flask-register-error-email-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
+          <img src="screenshots/flask-register-error-email-768w.jpg" alt="Red flash message when email or username is not unique" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        </picture>
+        <p class="mt-2 text-sm text-gray-600 text-center">Red flash message on registration failure — to be replaced with generic messages in production.</p>
+      </article>
+
+      
+      <!-- Registration Error -->
+      <article class="bg-white p-4 rounded-lg shadow">
+        <picture>
+          <source srcset="screenshots/flask_coderacket_unique_username_warning-480w.jpg 480w, screenshots/flask_coderacket_unique_username_warning-768w.webp 768w, screenshots/flask_coderacket_unique_username_warning-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
+          <source srcset="screenshots/flask_coderacket_unique_username_warning-480w.jpg 480w, screenshots/flask_coderacket_unique_username_warning-768w.jpg 768w, screenshots/flask_coderacket_unique_username_warning-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
+          <img src="screenshots/flask_coderacket_unique_username_warning-768w.jpg" alt="Red flash message when email or username is not unique" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
         </picture>
         <p class="mt-2 text-sm text-gray-600 text-center">Red flash message on registration failure — to be replaced with generic messages in production.</p>
       </article>
