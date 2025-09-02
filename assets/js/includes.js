@@ -9,22 +9,27 @@
 function includeHtml(selector, url, callback) {
 	// Initiates a HTTP Request to a specified URL
 	fetch(url)	// Returns a Promise, Handles asynchronous operations and chaining
-	.then(response => {	// Response object callback
-		// Check for HTTP status success or error
-		if (!response.ok){
-		  throw new Error("[*]Network Response Failed[*]");
-		}
-		// Parses the response body as plain-text
-		return response.text();
+	  .then(response => {	// Response object callback
+	      // Check for HTTP status success or error
+		  if (!response.ok){
+		    throw new Error(`[*]Could not load: ${url}[*]`);
+		  }
+		  // Parses the response body as plain-text
+		  return response.text();
 	})
-
 	// data object callback 
 	.then(data=> {
+		const element = document.querySelector(selector);
+
+		if (element) {
+			element.innerHTML = data;
+		
 		// Find and return first element of a webpage matching the specified CSS selector string
 		// then inject the footer and header html code into the DOM
-		document.querySelector(selector).innerHTML = data;
-		if (callback){
-			callback();
+		  if (callback) callback();
+		} else {
+			// Handle missing elements in webpage.  
+			console.warn(`Selector "${selector}" not found in DOM`);
 		}
 	})
 
@@ -45,9 +50,12 @@ function setCopyrightYear(){
 
 // Wait for the DOM to fully load before running scripts
 document.addEventListener('DOMContentLoaded', () => {
+	const basePath = window.location.pathname.includes('/projects/flask-auth/') ? '../../assets/includes/'
+	: '/assets/includes/'; // Fallback for pages at root level. 
+
 	// Initiate header and footer includes with Font Awesome scan callback 
-	includeHtml('[data-include=header]', '/assets/includes/header.html');
-	includeHtml('[data-include=footer]', '/assets/includes/footer.html', () => {
+	includeHtml('[data-include=header]', `/assets/includes/header.html`);
+	includeHtml('[data-include=footer]', `/assets/includes/footer.html`, () => {
 		setCopyrightYear();
 		
 	});

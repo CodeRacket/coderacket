@@ -7,8 +7,18 @@
   <meta name="description" content="Full Stack Developer specializing in backend, security, and devops. Explore my projects and get in touch." />
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+      <!-- External CSS (optional, can link to stylesheets here) -->
+    
+    <link rel="stylesheet" href="/assets/css/shared-styles.css">
+    
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="/assets/css/all.css">
+<!-- Preload Images reduces Load Times -->
+    <link rel="preload" href="/assets/images/logos/coderacket-logo-768w.webp" as="image" type="image/webp" >
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+
+  <!-- Include header.html for Portfolio navbar -->
   <div data-include="header"></div>
   <!-- Hero Section -->
   <header class="max-w-5xl mx-auto px-6 py-20 text-center">
@@ -160,10 +170,14 @@
     </a>
   </section>
 
-  <footer class="text-center py-6 text-gray-500 text-sm">
-    &copy; 2025 Coderacket. All rights reserved.
-  </footer>
   <div data-include="footer"></div>
 
+  <script src="../../assets/js/main.js"></script>  
+  <script src="../../assets/js/includes.js"></script>
+  <script src="../../assets/js/icons-deferred.js"></script>
+  
+  
+  
+  
 </body>
 </html>
