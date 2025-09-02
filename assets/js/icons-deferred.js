@@ -1,17 +1,20 @@
-// this file loads icons once in 10% visitors viewport
 const icons = document.querySelectorAll('.icon-lazy');
+
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
-    // Check if icon is in viewport
-    if(entry.isIntersecting){
-      // Make icon visible if in viewport
+    if (entry.isIntersecting) {
+      // Force FontAwesome to render the icon (if using SVG)
+      if (window.FontAwesome && window.FontAwesome.dom && window.FontAwesome.dom.i2svg) {
+        window.FontAwesome.dom.i2svg({ node: entry.target });
+      }
+
+      // Reveal icon
       entry.target.classList.add('icon-lazy-loaded');
-      // Then stop monitoring the icons once loaded
-      observer.unobserve(entry.target);  
-        
+
+      // Stop observing this icon
+      observer.unobserve(entry.target);
     }
   });
+}, { threshold: 0.1 });
 
-}, {threshold: 0.1});
-//call the observer
 icons.forEach(icon => observer.observe(icon));
