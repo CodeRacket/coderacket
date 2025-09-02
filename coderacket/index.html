@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- As of Nov 2021 leave this out unless targeting legacy browsers ... If you need to support IE9 or IE8, then I would recommend using the tag. If you only support the latest browsers (IE11 and/or Edge) then I would consider dropping this tag altogether. If you use Twitter Bootstrap and need to eliminate validation warnings, this tag must appear in its specified order. 
+    CITE: https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="CodeRacket portfolio page - web development company">
+    <meta name="author" content="CodeRacket">
+    <meta name="robots" content="index, follow"> <!-- For SEO: index or noindex, follow or nofollow -->
+    <!-- Google SEO TAG -->
+    <meta name="google-site-verification" content="lW9m08BxEGDTmfQv0TeOZmdPUvaIDytTdVuP4Ftl2Ys" >
+    
+    
+
+    <!-- Social Media Meta Tags (Open Graph, Twitter Cards) -->
+    <meta property="og:title" content="CodeRacket - Full-Stack Web Development Portfolio">
+    <meta property="og:description" content="Explore CodeRacket's portfolio showcasing full-stack web development projects.">
+    <meta property="og:image" content="https://coderacket.com/assets/images/logos/coderacket-logo-768w.webp">
+    <meta property="og:url" content="https://coderacket.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Code Racket - Full-Stack Web Development Portfolio">
+    <meta name="twitter:description" content="Code Racket portfolio showcasing freelance web development projects.">
+    <meta name="twitter:image" content="https://coderacket.com/assets/images/logos/coderacket-logo-768w.webp">
+    <meta name="twitter:image:alt" content="Coderacket logo">
+
+
+    <title>CodeRacket Portfolio Page</title> <!-- Page title (important for SEO and user experience) -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Optional: Apple Touch Icon for iOS devices -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"> <!-- ... Favicon: Serve different icon formats for various devices (e.g., a 32x32 pixel .ico for desktop, .png for Apple touch icons, etc.)-->
+
+    <!-- External CSS (optional, can link to stylesheets here) -->
+    
+    <link rel="stylesheet" href="./assets/css/shared-styles.css">
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
+
+    <!-- Web Fonts (optional, etc.) -->
+    <!-- FontAwesome is Awesome -->
+    <!--
+    <link rel="preload" href="/assets/css/fontawesome.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="/assets/css/brands.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="/assets/css/solid.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="/assets/css/regular.css" as="style" onload="this.rel='stylesheet'">
+-->
+
+
+    <!--NoScript for when javascript is disabled in browser and the preload fails-->
+   <!--
+    <noscript>
+      <link rel="stylesheet" href="/assets/css/fontawesome.css">
+      <link rel="stylesheet" href="/assets/css/brands.css">
+      <link rel="stylesheet" href="/assets/css/solid.css">
+      <link rel="stylesheet" href="/assets/css/regular.css">
+    </noscript> 
+-->
+
+<!-- Uncomment for testing purposes !!! 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-... (insert hash)" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    
+
+ 
+    <!-- OLD FONTAWESOME DELETE ME AFTER TESTING
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" type="text/css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    -->
+    <link rel="stylesheet" href="/assets/css/all.css">
+
+    <!-- Preload Images reduces Load Times -->
+    <link rel="preload" href="./assets/images/logos/coderacket-logo-768w.webp" as="image" type="image/webp" >
+    <!-- Verification For google -->
+    <meta name="google-site-verification" content="lW9m08BxEGDTmfQv0TeOZmdPUvaIDytTdVuP4Ftl2Ys" >
+</head>
+
+<body>
+    <!-- Page Content -->
+    <!-- Placeholder for the portfolio navigation system -->
+    <div data-include="header"></div>
+    
+  <main>
+          <!-- Main content of the webpage goes here -->
+  <section id="welcome-section">
+    <h1>I am CodeRacket</h1>
+    <p>Hi, I’m Coderacket
+Full Stack Developer focused on backend, security, and devops. Building reliable, secure, and scalable applications.
+</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Work</h2>
+    <h3>Interesting Projects:</h3>
+    <p>Checkout The Projects I've Worked On. Click to view or Explore My Code on GitHub.</p>
+
+    <!-- Attempting to make projects section consistent with overall layout--><!-- Added Container -->
+    <div class="container">
+      <div class="project-container">
+
+<!-- project 0 -->    
+        <article class="project-item">
+          <a href="./projects/flask-auth/index.html" class="project-link">
+            <picture>
+              <source srcset=" ./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-480w.webp 480w, ./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-768w.webp 768w, ./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-1200w.webp 1200w" type="image/webp" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" >
+              <source srcset="./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-480w.jpg 480w, ./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-768w.jpg 768w, ./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-1200w.jpg 1200w" type="image/jpeg" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" >
+              <img src="./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-768w.jpg" alt="Flask Authentication Application Demo Image" class="project-image" loading="lazy" title="Secure Flask Authentication">
+            </picture>
+          </a>
+              
+          <div class="project-info">
+            <h3 class="project-title">Flask Auth MVP</h3>
+            <p class="project-description">
+            A secure, lightweight authentication system built with Flask.
+This MVP supports user registration, login/logout, session handling, and route protection using Flask-Login. Security is enforced through CSRF tokens and secure password hashing. While foundational features are in place, future upgrades will include CAPTCHA, brute-force protection, and rate limiting.
+</p>
+            <a href="./projects/flask-auth/index.html" class="btn">Flask Auth Demo</a>
+            <a href="https://github.com/CodeRacket/flask_auth_mvp" class="btn">View Code</a>
+          </div>
+        </article>
+
+          <!-- project 1 -->    
+        <article class="project-item">
+          <a href="./mockups/flower-shop/index.html" class="project-link">
+            <picture>
+              <source srcset=" ./assets/images/mockups/flower-shop/flower-shop-mockup-homepage-thumbnail-480w.webp 480w, ./assets/images/mockups/flower-shop/flower-shop-mockup-homepage-thumbnail-768w.webp 768w, ./assets/images/mockups/flower-shop/flower-shop-mockup-homepage-thumbnail-1200w.webp 1200w" type="image/webp" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" >
+              <source srcset="./assets/images/mockups/flower-shop/flower-shop-mockup-homepage-thumbnail-480w.jpg 480w, ./assets/images/mockups/flower-shop/flower-shop-mockup-homepage-thumbnail-768w.jpg 768w, ./assets/images/mockups/flower-shop/flower-shop-mockup-homepage-thumbnail-1200w.jpg 1200w" type="image/jpeg" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" >
+              <img src="./assets/images/mockups/flower-shop/flower-shop-mockup-homepage-thumbnail-768w.jpg" alt="Illustration of a flower shop website layout with a colorful floral arrangement" class="project-image" loading="lazy" title="Coming Soon - Flower Shop Website mockup">
+            </picture>
+          </a>
+              
+          <div class="project-info">
+            <h3 class="project-title">Flower Shop Website Mockup</h3>
+            <p class="project-description">
+  The Flower Shop Mockup is Here! This website mockup is designed with local flower shops in mind, offering an accessible, professional online presence for businesses of all sizes. The easy-to-navigate catalog, responsive design, and seamless shopping experience will showcase your bouquets and floral arrangements. Whether you’re a small family-owned shop or a larger floral business, this website will help enhance customer engagement, drive sales, and grow your business online.
+</p>
+            <a href="./mockups/flower-shop/index.html" class="btn">Flower Shop Demo</a>
+            <a href="https://github.com/coderacket/coderacket/blob/main/mockups/flower-shop" class="btn">View Code</a>
+          </div>
+        </article>
+          <!-- Project 2 -->
+        <article class="project-item">
+          <picture>
+            <source srcset=" ./assets/images/projects/coming-soon-default-480w.webp 480w, ./assets/images/projects/coming-soon-default-768w.webp 768w, ./assets/images/projects/coming-soon-default-1200w.webp 1200w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" type="image/webp" >
+            <source srcset="./assets/images/projects/coming-soon-default-480w.jpg 480w, ./assets/images/projects/coming-soon-default-768w.jpg 768w, ./assets/images/projects/coming-soon-default-1200w.jpg 1200w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" type="image/jpg">
+            <img src="./assets/images/projects/coming-soon-default-768w.jpg" alt="Coming Soon - Local Bakery Website" class="project-image" loading="lazy" title="Coming Soon - Local Bakery Website Mockup ">    
+          </picture> 
+            <div class="project-info">
+            <h3 class="project-title">Coming Soon: Local Bakery Site</h3>
+             <p class="project-description">Exciting things are coming soon! This bakery website will feature a beautiful, easy-to-navigate design where customers can browse your delicious products, view daily specials, and place orders online. It’s designed to help bakeries like yours increase sales and engage with customers—whether you're a small family-owned bakery or a larger shop looking to expand your digital presence.</p>
+            <a href="./mockups/local-bakery/index.html" class="btn">Local Bakery Demo</a>             
+            <a href="https://github.com/coderacket/coderacket/blob/main/mockups/local-bakery" class="btn">View Code</a>
+          </div>
+        </article>
+          <!-- Project 3 -->
+        <article class="project-item">
+          <picture>
+            <source srcset=" ./assets/images/projects/coming-soon-default-480w.webp 480w, ./assets/images/projects/coming-soon-default-768w.webp 768w, ./assets/images/projects/coming-soon-default-1200w.webp 1200w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" type="image/webp" >
+            <source srcset="./assets/images/projects/coming-soon-default-480w.jpg 480w, ./assets/images/projects/coming-soon-default-768w.jpg 768w, ./assets/images/projects/coming-soon-default-1200w.jpg 1200w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" type="image/jpg">
+            <img src="./assets/images/projects/coming-soon-default-768w.jpg" alt="Coming Soon - Photography Portfolio Custom Website" class="project-image" loading="lazy" title="Coming Soon - Photography Portfolio Website Mockup">    
+          </picture> 
+          <div class="project-info">
+            <h3 class="project-title">Coming Soon: Photography Portfolio</h3>
+            <p class="project-description">Coming soon: A sleek, modern photography portfolio website where photographers can showcase their work, attract new clients, and manage bookings. This site will highlight your best shots and make it easy for potential clients to view your portfolio and schedule sessions.</p>
+            <a href="./mockups/photography-portfolio/index.html" class="btn">Photography Demo</a>
+            <a href="https://github.com/coderacket/coderacket/blob/main/mockups/photography-portfolio" class="btn">View Code</a>
+          </div>    
+        </article>
+          <!-- project 4 -->    
+        <article class="project-item">
+          <picture>
+            <source srcset=" ./assets/images/projects/coming-soon-default-480w.webp 480w, ./assets/images/projects/coming-soon-default-768w.webp 768w, ./assets/images/projects/coming-soon-default-1200w.webp 1200w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" type="image/webp" >
+            <source srcset="./assets/images/projects/coming-soon-default-480w.jpg 480w, ./assets/images/projects/coming-soon-default-768w.jpg 768w, ./assets/images/projects/coming-soon-default-1200w.jpg 1200w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" type="image/jpg">
+            <img src="./assets/images/projects/coming-soon-default-768w.jpg" alt="Coming Soon - Dental Shop Website" class="project-image" loading="lazy" title="Coming Soon - Dental Shop Website Mockup">    
+          </picture> 
+          <div class="project-info">
+            <h3 class="project-title">Coming Soon: Dental Shop</h3>
+            <p class="project-description">Get ready for a website designed for dental shops and clinics, featuring a user-friendly online store for dental products, appointment booking functionality, and educational resources for patients. This website will help clinics and dental retailers enhance their digital presence and engage with customers.</p>
+            <a href="./mockups/dental-shop/index.html" class="btn">Dental Shop Demo</a>
+            <a href="https://github.com/coderacket/coderacket/blob/main/mockups/dental-shop" class="btn">View Code</a>
+          </div>
+        </article>
+    </div>
+  </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to Work Together, have any questions or just want to reach out!</p>
+
+    <div class="container"> <!-- added container around for consistent display across screensizes-->
+    <form action="#" method="POST">
+      <div>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="phone">Your Phone:  *Optional*</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+
+      <div>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="message">Send Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </div>
+    </form>
+    </div>
+    
+    <div class="contact-info">
+      <p><a href="mailto:contact@coderacket.com" ><i class="icon-lazy fas fa-envelope" aria-hidden="true"></i><span class="fa-sr-only">Email</span>Contact@CodeRacket.com</a></p>
+      <p><a href="https://www.linkedin.com/in/nathaniel-andreano-668676348/" ><i class="icon-lazy fab fa-linkedin" aria-hidden="true"></i><span class="fa-sr-only">Linkedin</span>LinkedIn</a> and <a href="https://github.com/coderacket" ><i class="icon-lazy fab fa-github" aria-hidden="true"></i><span class="fa-sr-only">Github</span>GitHub</a>.</p>
+    </div>
+  </section>
+
+</main>
+    <script src="./assets/js/main.js"></script>  
+    <script src="./assets/js/includes.js"></script>s
+    <div data-include="footer"></div>
+    <script src="./assets/js/icons-deferred.js"></script>
+</body>
+</html>

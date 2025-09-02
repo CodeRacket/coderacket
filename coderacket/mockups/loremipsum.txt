@@ -1,0 +1,1 @@
+Place to make static mockups come to life static code projects eventually with JS interaction and maybe even a mockup backend database!

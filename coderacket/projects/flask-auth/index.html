@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coderacket — Full Stack & Security Freelancer</title>
+  <meta name="description" content="Full Stack Developer specializing in backend, security, and devops. Explore my projects and get in touch." />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+  <div data-include="header"></div>
+  <!-- Hero Section -->
+  <header class="max-w-5xl mx-auto px-6 py-20 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+  Flask Authentication MVP
+    </h1>
+    <p class="text-xl md:text-2xl max-w-2xl mx-auto text-gray-700 mb-8">
+      A lightweight, secure user authentication system built with Flask. Features include registration, login, session handling, and route protection — ready to be extended for production use.
+    </p>
+    <a href="https://github.com/CodeRacket/flask_auth_mvp" target="_blank" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition">
+  View on GitHub
+    </a>
+  </header>
+
+  <!-- Features Section -->
+  <section class="max-w-5xl mx-auto px-6 py-16 grid gap-12 md:grid-cols-3">
+    <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-3">Secure User Authentication</h3>
+      <p class="text-gray-700">:
+        Supports user registration, login, and logout using Flask-Login with protected routes and session management.
+      </p>
+    </article>
+    <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-3">CSRF & Password Protection</h3>
+      <p class="text-gray-700">
+        Security features include CSRF tokens and password hashing using Werkzeug for safe credential handling.
+      </p>
+    </article>
+    <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"> 
+      <h3 class="text-xl font-semibold mb-3">Extendable MVP</h3>
+      <p class="text-gray-700">
+        Designed as a modular foundation. Easy to extend with features like rate limiting, CAPTCHA, and JWT-based auth.
+      </p>
+    </article>
+  </section>
+
+  <!-- Project Showcase Section -->
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold mb-8 text-center">Project Screenshots</h2>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Homepage -->
+       <article class="bg-white p-4 rounded-lg shadow">
+        <picture>
+          <source srcset="screenshots/flask_home-480w.webp 480w, screenshots/flask_home-768w.webp 768w, screenshots/flask_home-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
+          <source srcset="screenshots/flask_home-480w.jpg 480w, screenshots/flask_home-768w.jpg 768w, screenshots/flask_home-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
+          <img src="screenshots/flask_home-768w.jpg" alt="Flask login form with username and password fields" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        </picture>
+        <p class="mt-2 text-sm text-gray-600 text-center">Homepage linking to registration and login forms.</p> 
+      </article>
+      
+      <!-- Registration Form -->
+      <article class="bg-white p-4 rounded-lg shadow">
+        <picture>
+          <source srcset="screenshots/flask_coderacket_registration-480w.webp 480w, screenshots/flask_coderacket_registration-768w.webp 768w, screenshots/flask_coderacket_registration-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
+          <source srcset="screenshots/flask_coderacket_registration-480w.jpg 480w, screenshots/flask_coderacket_registration-768w.jpg 768w, screenshots/flask_coderacket_registration-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
+          <img src="screenshots/flask_coderacket_registration-768w.jpg" alt="Flask registration form requiring unique username and email" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        </picture>
+        <p class="mt-2 text-sm text-gray-600 text-center">Registration form with server-side checks for unique email and username.</p>
+      </article>
+
+      <!-- Registration Error -->
+      <article class="bg-white p-4 rounded-lg shadow">
+        <picture>
+          <source srcset="screenshots/flask_unique_email_warning-480w.webp 480w, screenshots/flask_unique_email_warning-768w.webp 768w, screenshots/flask_unique_email_warning-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
+          <source srcset="screenshots/flask_unique_email_warning-480w.jpg 480w, screenshots/flask_unique_email_warning-768w.jpg 768w, screenshots/flask_unique_email_warning-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
+          <img src="screenshots/flask_unique_email_warning-768w.jpg" alt="Red flash message when email or username is not unique" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        </picture>
+        <p class="mt-2 text-sm text-gray-600 text-center">Red flash message on registration failure — to be replaced with generic messages in production.</p>
+      </article>
+
+      
+      <!-- Registration Error -->
+      <article class="bg-white p-4 rounded-lg shadow">
+        <picture>
+          <source srcset="screenshots/flask_coderacket_unique_username_warning-480w.jpg 480w, screenshots/flask_coderacket_unique_username_warning-768w.webp 768w, screenshots/flask_coderacket_unique_username_warning-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
+          <source srcset="screenshots/flask_coderacket_unique_username_warning-480w.jpg 480w, screenshots/flask_coderacket_unique_username_warning-768w.jpg 768w, screenshots/flask_coderacket_unique_username_warning-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
+          <img src="screenshots/flask_coderacket_unique_username_warning-768w.jpg" alt="Red flash message when email or username is not unique" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        </picture>
+        <p class="mt-2 text-sm text-gray-600 text-center">Red flash message on registration failure — to be replaced with generic messages in production.</p>
+      </article>
+
+      <!-- Login Form -->
+      <article class="bg-white p-4 rounded-lg shadow">
+        <picture>
+          <source srcset="screenshots/flask-login-form-480w.webp 480w, screenshots/flask-login-form-768w.webp 768w, screenshots/flask-login-form-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
+          <source srcset="screenshots/flask-login-form-480w.jpg 480w, screenshots/flask-login-form-768w.jpg 768w, screenshots/flask-login-form-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
+          <img src="screenshots/flask-login-form-768w.jpg" alt="Flask login form with username and password fields" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        </picture>
+        <p class="mt-2 text-sm text-gray-600 text-center">Login form used after successful registration or return visit.</p>
+      </article>
+
+      <!-- Login Success -->
+      <article class="bg-white p-4 rounded-lg shadow">
+        <picture>
+          <source srcset="screenshots/flask-login-success-480w.webp 480w, screenshots/flask-login-success-768w.webp 768w, screenshots/flask-login-success-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
+          <source srcset="screenshots/flask-login-success-480w.jpg 480w, screenshots/flask-login-success-768w.jpg 768w, screenshots/flask-login-success-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
+          <img src="screenshots/flask-login-success-768w.jpg" alt="Successful login flash message in green" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        </picture>
+        <p class="mt-2 text-sm text-gray-600 text-center">Login success flash message appears and user is redirected to dashboard.</p>
+      </article>
+
+      <!-- User Dashboard -->
+      <article class="bg-white p-4 rounded-lg shadow">
+        <picture>
+          <source srcset="screenshots/flask-dashboard-480w.webp 480w, screenshots/flask-dashboard-768w.webp 768w, screenshots/flask-dashboard-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
+          <source srcset="screenshots/flask-dashboard-480w.jpg 480w, screenshots/flask-dashboard-768w.jpg 768w, screenshots/flask-dashboard-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
+          <img src="screenshots/flask-dashboard-768w.jpg" alt="Dashboard after login showing logged-in user" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        </picture>
+        <p class="mt-2 text-sm text-gray-600 text-center">Basic user dashboard after login — no frontend styling yet.</p>
+      </article>
+
+      <!-- Logout -->
+      <article class="bg-white p-4 rounded-lg shadow">
+        <picture>
+          <source srcset="screenshots/flask-logout-480w.webp 480w, screenshots/flask-logout-768w.webp 768w, screenshots/flask-logout-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
+          <source srcset="screenshots/flask-logout-480w.jpg 480w, screenshots/flask-logout-768w.jpg 768w, screenshots/flask-logout-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
+          <img src="screenshots/flask-logout-768w.jpg" alt="Logout route confirmed, session destroyed" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        </picture>
+        <p class="mt-2 text-sm text-gray-600 text-center">Logout action ends session and redirects to login page securely.</p>
+      </article>
+
+      <!-- Terminal Start -->
+      <article class="bg-white p-4 rounded-lg shadow">
+        <picture>
+          <source srcset="screenshots/flask-terminal-run-480w.webp 480w, screenshots/flask-terminal-run-768w.webp 768w, screenshots/flask-terminal-run-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
+          <source srcset="screenshots/flask-terminal-run-480w.jpg 480w, screenshots/flask-terminal-run-768w.jpg 768w, screenshots/flask-terminal-run-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
+          <img src="screenshots/flask-terminal-run-768w.jpg" alt="Flask development server running in terminal" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        </picture>
+        <p class="mt-2 text-sm text-gray-600 text-center">Flask server terminal output — because terminals are beautiful.</p>
+      </article>
+
+    </div>
+  </section>
+
+
+ 
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-5xl mx-auto px-6 py-16 text-center">
+    <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+    <p class="text-gray-700 mb-6">
+      Interested in working together? Reach out via email or LinkedIn.
+    </p>
+    <a href="mailto:Contact@coderacket.com" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition mr-4">
+      Email Me
+    </a>
+    <a href="https://www.linkedin.com/in/nathaniel-andreano-668676348" target="_blank" class="inline-block bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-900 transition">
+      LinkedIn
+    </a>
+  </section>
+
+  <footer class="text-center py-6 text-gray-500 text-sm">
+    &copy; 2025 Coderacket. All rights reserved.
+  </footer>
+  <div data-include="footer"></div>
+
+</body>
+</html>
