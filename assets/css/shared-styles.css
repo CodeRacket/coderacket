@@ -31,7 +31,8 @@
     --link-color: #555; /* obviously default link color */
     /* If i have to define another css variable ill be Quiting this work 0_o */
   
-  
+    /* CTA text and link coloring */
+    --audit-cta-text: #f9f9f9;
   } 
   
   /* ====== Reset / Normalize ====== */
@@ -298,7 +299,7 @@
     margin: 0 1rem;
   }
   .nav-links a{
-    display: inline-bock;
+    display: inline-block;
     padding: 1rem 2rem;
     color: var(--navbar-text-color);
     font-size: 1.1rem;
@@ -381,10 +382,27 @@
     margin-bottom: 2rem;
     color: #555;
   }
-  
+  .contact-form .form-group{
+    margin-bottom: 1.5rem;
+  }
+  form .for-group:last-of-type {
+    margin-top: 1rem;
+  }
+  .contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .optional {
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+
   /* Display form as grid for responsiveness on various screens */
   form {
-    display: none; /* removed for static gitpages old_property_value = grid;*/
+    display: block; /* removed for static gitpages old_property_value = grid;*/
     gap: 20px;
     justify-items: center;
     max-width: 500px; /* ensure forms max-width is constrained to max 500px*/
@@ -404,6 +422,7 @@
     border: 1px solid #ddd;
     border-radius: 5px; 
     margin-top: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
   form button{
     background-color: var(--button-bg-color);
@@ -426,18 +445,42 @@
     margin-right: 0.5rem;
     font-size:1.125rem;
   }
-  .contact-info a:hover{
+  #contact .contact-info a:hover {
     text-decoration: underline;
+    color: var(--link-hover-color);
   }
   .contact-info a i:hover {
     color: #45a049;;  /* Change color on hover if desired */
   }
-  
+  form input:hover,
+  form textarea:hover,
+  form input:focus, 
+  form textarea:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  form input:focus,
+  form textarea:focus,
+  form button:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+  }
+
+  #audit-cta{
+    color: var(--audit-cta-text);
+    text-decoration: none;
+  }
+  #welcome-section .contact-info{
+    color:white;  
+    margin: 20px;
+  }
   /* Welcome Section Styling */
   #welcome-section{
     /* Display & Positioning Elements */
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     text-align: center; 
     /* [*] End ... [*]*/
@@ -458,7 +501,7 @@
   #welcome-section p{
     font-size: 1.4rem;
     max-width: 600px;
-    margin: 0 auto; 
+    margin-bottom: 10px auto; 
     line-height: 1.6;
   }
   
@@ -493,7 +536,7 @@
     padding: 0;
   }
   .footer-container a{
-    color: var(--footert-text-color);
+    color: var(--footer-text-color);
     text-decoration: none;
   }
   .footer-container a:hover{
@@ -505,3 +548,4 @@
     text-align: center;
     font-size:0.9rem;
   }
+

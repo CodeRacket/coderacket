@@ -6,10 +6,10 @@
     <!-- As of Nov 2021 leave this out unless targeting legacy browsers ... If you need to support IE9 or IE8, then I would recommend using the tag. If you only support the latest browsers (IE11 and/or Edge) then I would consider dropping this tag altogether. If you use Twitter Bootstrap and need to eliminate validation warnings, this tag must appear in its specified order. 
     CITE: https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="CodeRacket portfolio page - web development company">
+    <meta name="description" content="CodeRacket ">
     <meta name="author" content="CodeRacket">
     <meta name="robots" content="index, follow"> <!-- For SEO: index or noindex, follow or nofollow -->
-    <!-- Google SEO TAG -->
+    <!-- Google SEO TAG / Verification-->
     <meta name="google-site-verification" content="lW9m08BxEGDTmfQv0TeOZmdPUvaIDytTdVuP4Ftl2Ys" >
     
     
@@ -25,8 +25,8 @@
     <meta name="twitter:image" content="https://coderacket.com/assets/images/logos/coderacket-logo-768w.webp">
     <meta name="twitter:image:alt" content="Coderacket logo">
 
-
-    <title>CodeRacket Portfolio Page</title> <!-- Page title Accessibility and SEO-->
+    <!-- ACCESSIBILITY and SEO—search engine rankings -->
+    <title>Nathaniel Andreano | CodeRacket Web Developer Portfolio</title>
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -67,12 +67,13 @@
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" type="text/css" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     -->
+
+    <!-- Local version of FontAwesome, Customize for Performance
+    all.css is a bit much. -->
     <link rel="stylesheet" href="/assets/css/all.css">
 
     <!-- Preload Images reduces Load Times -->
     <link rel="preload" href="./assets/images/logos/coderacket-logo-768w.webp" as="image" type="image/webp" >
-    <!-- Verification For google -->
-    <meta name="google-site-verification" content="lW9m08BxEGDTmfQv0TeOZmdPUvaIDytTdVuP4Ftl2Ys" >
 </head>
 
 <body>
@@ -83,15 +84,164 @@
   <main>
           <!-- Main content of the webpage goes here -->
   <section id="welcome-section">
-    <h1>I am CodeRacket</h1>
-    <p>Hi, I’m Nathaniel
-Full Stack Developer focused on backend, security, and devops. Building reliable, secure, and scalable applications.
-</p>
+    <h1>Affordable Tech Solutions for Small Businesses and Non-Profits</h1>
+    <p>Get online fast, stay secure, grow with confidence.</p>
+    <div class="container">
+      <div class="contact-info">
+        <p><strong>Schedule a Free Audit:</strong></p>
+        <p><a id="audit-cta" href="mailto:contact@coderacket.com" ><i class="icon-lazy fas fa-envelope" aria-hidden="true"></i><span class="fa-sr-only">Email</span>Contact@CodeRacket.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="who-i-help">
+    <div class="container">
+      <h2>Who I Help</h2>
+      <p>I work with small businesses, nonprofits, and founders who need fast, secure websites — without agency pricing.</p>
+    </div>
+
+    <section id="what-i-do">
+  <div class="container">
+    <h2>What I Do</h2>
+    <div class="what-i-do-grid">
+
+      <div class="what-i-do-item">
+        <i class="fas fa-bolt"></i>
+        <h3>Performance</h3>
+        <p>Speed optimizations, lazy loading, and improved Core Web Vitals.</p>
+      </div>
+
+      <div class="what-i-do-item">
+        <i class="fas fa-lock"></i>
+        <h3>Security</h3>
+        <p>Secure headers, HTTPS setup, and basic app hardening built-in.</p>
+      </div>
+
+      <div class="what-i-do-item">
+        <i class="fas fa-cloud-upload-alt"></i>
+        <h3>Deployments</h3>
+        <p>Docker, NGINX, Linux servers with backups and monitoring baked in.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section id="packages">
+    <div class="container">
+      <h2>Service Packages</h2>
+      <p>Choose a package based on your needs — from simple audits to full backend deployment. Each service is designed for small businesses, startups, and non-profits that need secure, reliable, and optimized web solutions.</p>
+
+      <!-- 
+      Note: Emojis for screenreaders purely decorative—then:
+      aria-hidden="true"
+      to make it accessible add H3 element text
+      aria-label="Deployment"
+      -->    
+      <div class="package-item">
+         <h3><span role="img" aria-hidden="true">&#128313;</span> Starter</h3>
+        <ul>
+          <li>Lazy load images for faster page load</li>
+          <li>Fix layout shifts (CLS issues)</li>
+          <li>Secure essential headers</li>
+          <li>Performance and UX improvements</li>
+        </ul>
+      </div>
+
+      <div class="package-item">
+        <h3><span role="img" aria-hidden="true">&#128272;</span> Secure Site</h3>
+        <ul>
+          <li>Full HTTPS setup with TLS</li>
+          <li>Harden HTTP headers</li>
+          <li>Basic web security hardening</li>
+          <li>OWASP top 10 checkup</li>
+        </ul>
+      </div>
+
+      <div class="package-item">
+        <h3><span role="img" aria-hidden="true">&#x2699;</span> Deployment</h3>
+        <ul>
+          <li>Deploy Flask app with Docker & Gunicorn</li>
+          <li>Configure NGINX for static or dynamic apps</li>
+          <li>Basic uptime and log monitoring setup</li>
+        </ul>
+      </div>
+
+      <div class="package-item">
+        <h3><span role="img" aria-hidden="true">&#129521;</span> Infra Setup</h3>
+        <ul>
+          <li>Linux server setup & firewall configuration</li>
+          <li>Automated encrypted backups</li>
+          <li>Secure user accounts and permissions</li>
+          <li>Optional: Samba, SFTP, DNS & domain config</li>
+        </ul>
+      </div>
+      <!-- Link case studies to packages—Real scenarios with real solutions. -->
+      <div class="package-item">
+        <h3><span role="img" aria-hidden="true">&#x1F4CA;</span> Mini Audit</h3>
+        <ul>
+          <li>Quick audit of your existing site</li>
+          <li>SEO, performance, and basic security insights</li>
+          <li>PDF report with clear action steps</li>
+          <li>Great for identifying urgent improvements</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+<!-- personalize, add a photo/logo & highlight trust ethos-->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I’m Nathaniel, a messy-hairded backend-focused developer with over a decade of hands-on messy-haired experience working with Linux, networks, and secure web systems. I now use that knowledge to help small businesses and nonprofits build fast, secure websites—with zero fluff and no upsells.</p>
+          <a href="#contact" class="btn">Let's Work Together</a>
+        </div>
+        <div class="about-image">
+          <img src="/assets/images/portfolio/about.jpg" alt="About Me">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Services</h2>
+      <p>I offer reliable backend setups, secure deployments, and performance-first websites for small businesses.</p>
+      <div class="services-grid">
+        <div class="service-item">
+          <i class="fas fa-tachometer-alt"></i>
+          <h3>Performance</h3>
+          <p>Lazy load, CLS fixes, caching, lighthouse score optimization.</p>
+        </div>
+
+        <div class="service-item">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Security</h3>
+          <p>HTTPS, firewall, headers, basic pentest, OWASP checks.</p>
+        </div>
+
+        <div class="service-item">
+          <i class="fas fa-server"></i>
+          <h3>Deployment</h3>
+          <p>Linux-based Docker deploys with NGINX, PostgreSQL, backups, and uptime monitoring.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta">
+    <div class="container">
+      <h2>Ready to Upgrade Your Website?</h2>
+      <p>Let’s talk. Whether it’s speed, security, or setup—you’ll get expert-level service without agency prices.</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
   </section>
 
   <section id="projects">
     <h2>My Work</h2>
-    <h3>Interesting Projects:</h3>
     <p>Checkout The Projects I've Worked On. Click to view or Explore My Code on GitHub.</p>
 
     <!-- Attempting to make projects section consistent with overall layout--><!-- Added Container -->
@@ -104,7 +254,7 @@ Full Stack Developer focused on backend, security, and devops. Building reliable
             <picture>
               <source srcset=" ./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-480w.webp 480w, ./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-768w.webp 768w, ./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-1200w.webp 1200w" type="image/webp" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" >
               <source srcset="./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-480w.jpg 480w, ./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-768w.jpg 768w, ./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-1200w.jpg 1200w" type="image/jpeg" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" >
-              <img src="./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-768w.jpg" alt="Flask Authentication Application Demo Image" class="project-image" loading="lazy" title="Secure Flask Authentication">
+              <img src="./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-768w.jpg" alt="Screenshot of a secure login screen built with Flask" class="project-image" loading="lazy" title="Secure Flask Authentication">
             </picture>
           </a>
               
@@ -146,25 +296,10 @@ This MVP supports user registration, login/logout, session handling, and route p
             <img src="./assets/images/projects/coming-soon-default-768w.jpg" alt="Coming Soon - Local Bakery Website" class="project-image" loading="lazy" title="Coming Soon - Local Bakery Website Mockup ">    
           </picture> 
             <div class="project-info">
-            <h3 class="project-title">Coming Soon: Local Bakery Site</h3>
-             <p class="project-description">Exciting things are coming soon! This bakery website will feature a beautiful, easy-to-navigate design where customers can browse your delicious products, view daily specials, and place orders online. It’s designed to help bakeries like yours increase sales and engage with customers—whether you're a small family-owned bakery or a larger shop looking to expand your digital presence.</p>
-            <a href="./mockups/local-bakery/index.html" class="btn">Local Bakery Demo</a>             
-            <a href="https://github.com/coderacket/coderacket/blob/main/mockups/local-bakery" class="btn">View Code</a>
-          </div>
-        </article>
-          <!-- Project 3 -->
-        <article class="project-item">
-          <picture>
-            <source srcset=" ./assets/images/projects/coming-soon-default-480w.webp 480w, ./assets/images/projects/coming-soon-default-768w.webp 768w, ./assets/images/projects/coming-soon-default-1200w.webp 1200w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" type="image/webp" >
-            <source srcset="./assets/images/projects/coming-soon-default-480w.jpg 480w, ./assets/images/projects/coming-soon-default-768w.jpg 768w, ./assets/images/projects/coming-soon-default-1200w.jpg 1200w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" type="image/jpg">
-            <img src="./assets/images/projects/coming-soon-default-768w.jpg" alt="Coming Soon - Photography Portfolio Custom Website" class="project-image" loading="lazy" title="Coming Soon - Photography Portfolio Website Mockup">    
-          </picture> 
-          <div class="project-info">
-            <h3 class="project-title">Coming Soon: Photography Portfolio</h3>
-            <p class="project-description">Coming soon: A sleek, modern photography portfolio website where photographers can showcase their work, attract new clients, and manage bookings. This site will highlight your best shots and make it easy for potential clients to view your portfolio and schedule sessions.</p>
-            <a href="./mockups/photography-portfolio/index.html" class="btn">Photography Demo</a>
-            <a href="https://github.com/coderacket/coderacket/blob/main/mockups/photography-portfolio" class="btn">View Code</a>
-          </div>    
+              <h3 class="project-title">Coming Soon: Projects to increase value for non-profits and startups with limited funding</h3>
+               <p class="project-description">Have an idea for a project you want built? Even if its just an idea, feel free to Contact me:</p><div class="contact-info">
+               <p><a href="mailto:contact@coderacket.com" ><i class="icon-lazy fas fa-envelope" aria-hidden="true"></i><span class="fa-sr-only">Email</span>Contact@CodeRacket.com</a></p>
+            </div>
         </article>
     </div>
   </div>
@@ -174,39 +309,50 @@ This MVP supports user registration, login/logout, session handling, and route p
     <h2>Contact Me</h2>
     <p>If you'd like to Work Together, have any questions or just want to reach out!</p>
 
-    <div class="container"> <!-- added container around for consistent display across screensizes-->
-    <form action="#" method="POST">
-      <div>
+    <div class="container"> <!-- Keeps spacing consistent between html elements-->
+    <form class="contact-form" action="https://formsubmit.co/contact@coderacket.com" method="POST" novalidate>
+      <!-- Hidden Fields -->
+
+      <input type="hidden" name="_subject" value="New Message from CodeRacket Contact Form">
+      <!-- SPAM Protection when set to ture-->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://coderacket.com/thank-you.html">
+      <input type="text" name="_honey" style="display:none"> <!-- Honeypot -->
+
+      <div class="form-group">
         <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required placeholder="Jane Doe">
       </div>
-      <div>
-        <label for="phone">Your Phone:  *Optional*</label>
-        <input type="tel" id="phone" name="phone">
+      <div class="form-group">
+        <label for="phone">Your Phone:  <span class="optional">(Optional)</span></label>
+        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
       </div>
 
-      <div>
+      <div class="form-group">
         <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
       </div>
 
-      <div>
-        <label for="message">Send Message:</label>
-        <textarea id="message" name="message" required></textarea>
+      <div class="form-group">
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Send me your idea."></textarea>
+      </div>
+      <div class="form-group">
         <button type="submit" class="btn">Send Message</button>
       </div>
+
     </form>
     </div>
     
     <div class="contact-info">
-      <p><a href="mailto:contact@coderacket.com" ><i class="icon-lazy fas fa-envelope" aria-hidden="true"></i><span class="fa-sr-only">Email</span>Contact@CodeRacket.com</a></p>
+      <p><a href="mailto:contact@coderacket.com"><i class="icon-lazy fas fa-envelope" aria-hidden="true"></i><span class="fa-sr-only">Email</span>Contact@CodeRacket.com</a></p>
       <p><a href="https://www.linkedin.com/in/nathaniel-andreano-668676348/" ><i class="icon-lazy fab fa-linkedin" aria-hidden="true"></i><span class="fa-sr-only">Linkedin</span>LinkedIn</a> and <a href="https://github.com/coderacket" ><i class="icon-lazy fab fa-github" aria-hidden="true"></i><span class="fa-sr-only">Github</span>GitHub</a>.</p>
     </div>
   </section>
 
 </main>
     <script src="./assets/js/main.js"></script>  
-    <script src="./assets/js/includes.js"></script>s
+    <script src="./assets/js/includes.js"></script>
     <div data-include="footer"></div>
     <script src="./assets/js/icons-deferred.js"></script>
 </body>
