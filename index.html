@@ -313,14 +313,12 @@ This MVP supports user registration, login/logout, session handling, and route p
     <p>If you'd like to Work Together, have any questions or just want to reach out using the email link below this form.</p>
 
     <div class="container"> <!-- Keeps spacing consistent between html elements-->
-    <form class="contact-form" action="https://formsubmit.co/4af88af5257322f10cabd48919492c73" method="POST" novalidate>
+    
+    <form class="contact-form" action="api.web3forms.com/submit" method="POST" novalidate>
 
       <!-- Hidden Fields -->
-      <input type="hidden" name="_subject" value="New Message from CodeRacket Contact Form">
-      <!-- SPAM Protection when set to ture-->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://coderacket.com/thank-you.html">
-      <input type="text" name="_honey" style="display:none"> <!-- Honeypot -->
+      <input type="hidden" name="access_key" value="668bd9d3-e255-4b29-9412-f1e04bc88f47">
+      <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
       <div class="form-group">
         <label for="name">Your Name:</label>
