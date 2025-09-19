@@ -314,12 +314,11 @@ This MVP supports user registration, login/logout, session handling, and route p
 
     <div class="container"> <!-- Keeps spacing consistent between html elements-->
     
-    <form class="contact-form" action="api.web3forms.com/submit" method="POST" novalidate>
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
 
       <!-- Hidden Fields -->
       <input type="hidden" name="access_key" value="668bd9d3-e255-4b29-9412-f1e04bc88f47">
-      <input type="hidden" name="redirect" value="https://web3forms.com/success">
-
+   
       <div class="form-group">
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required placeholder="Jane Doe">
@@ -338,6 +337,7 @@ This MVP supports user registration, login/logout, session handling, and route p
         <label for="message">Your Message:</label>
         <textarea id="message" name="message" rows="5" required placeholder="Send me your idea."></textarea>
       </div>
+      <input type="hidden" name="redirect" value="https://web3forms.com/success">
       <div class="form-group">
         <button type="submit" class="btn">Send Message</button>
       </div>
