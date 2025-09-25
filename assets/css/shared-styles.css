@@ -597,8 +597,10 @@ form textarea:hover {
 .contact-info a:hover i{
   color: color: var(--social-icon-hover-color);
 }
-#contact-info .fa-envelope{
+#contact-info .fa-envelope:hover {
   color: var(--social-icon-hover-color);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
 }
 #audit-cta,
 #email-cta {
@@ -611,7 +613,7 @@ form textarea:hover {
 #audit-cta:hover,
 #email-cta:hover,
 .contact-info .fa-envelope:hover {
-  color: #ffffff ; 
+  color: #ffffff; 
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
   text-decoration: underline;
 }
