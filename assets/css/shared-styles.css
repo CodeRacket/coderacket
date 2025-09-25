@@ -595,11 +595,13 @@ form textarea:hover {
   color: #ffffff;
 }
 .contact-info a:hover i{
-  color: #ffffff;
+  color: color: var(--social-icon-hover-color);
+}
+#contact-info .fa-envelope{
+  color: var(--social-icon-hover-color);
 }
 #audit-cta,
-#email-cta,
-#contact-info .fa-envelope{
+#email-cta {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease, text-shadow 0.3s ease;
