@@ -23,12 +23,18 @@
   <!-- Hero Section -->
   <header class="max-w-5xl mx-auto px-6 py-20 text-center">
     <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
-  Flask Authentication MVP [currently under security audit]
+  Flask Authentication MVP [currently being upgraded]
     </h1>
     <p class="text-xl md:text-2xl max-w-2xl mx-auto text-gray-700 mb-8">
 
       A lightweight, functional user authentication system built with Flask. Features include registration, login, session handling, and route protection — ready to be extended for production use.
-    </p>
+      Since the Launch of this demo the Flask authentication system has had several security upgrades as well as production based upgrades. </p>
+      
+      <ul> Changes:
+	  <li>1.) Security Upgrades for XSS, CSRF, and Bruteforce attacks.</li>
+          <li>2.) Migrated from a SQLite database to a PostgreSQL Database.</li>
+	  <li>3.) The App no longer uses venv virtual environment, instead it now relies on Docker containers.</li>
+   
     <a href="https://github.com/CodeRacket/flask_auth_mvp" target="_blank" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition">
   View on GitHub
     </a>
@@ -153,9 +159,8 @@
       </article>
 
     </div>
+    
   </section>
-
-
  
   <!-- Contact Section -->
   <section id="contact" class="max-w-5xl mx-auto px-6 py-16 text-center">
