@@ -35,7 +35,8 @@
     <link rel="preload" href="./assets/images/logos/coderacket-logo-768w.webp" as="image" type="image/webp">
 </head>
 
-<body>
+<body data-hosting="static"> <!- set attribute to server to host the form. ->
+
 <div data-include="header"></div>
 
 <main>
@@ -263,6 +264,17 @@
 </section>
 
 </main>
+
+<script>
+
+const hosting = document.body.dataset.hosting;
+const form = document.querySelector('.contact-form');
+
+if (hosting !== 'server' && form) {
+  form.remove();
+}
+
+</script>
 
 <script src="./assets/js/main.js"></script>
 <script src="./assets/js/includes.js"></script>
