@@ -21,6 +21,16 @@
   }
 }   
 
+/* Make only the hero email white */
+#welcome-section a[href^="mailto:"] {
+    color: #ffffff; /* White for readability */
+    text-decoration: none; /* Optional: remove underline */
+}
+
+#welcome-section a[href^="mailto:"]:hover {
+    color: #ffcc00; /* Optional hover color */
+}
+
 /* Styling for .projects section */
 #projects{
     padding:2rem;
