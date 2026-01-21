@@ -3,359 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- As of Nov 2021 leave this out unless targeting legacy browsers ... If you need to support IE9 or IE8, then I would recommend using the tag. If you only support the latest browsers (IE11 and/or Edge) then I would consider dropping this tag altogether. If you use Twitter Bootstrap and need to eliminate validation warnings, this tag must appear in its specified order. 
-    CITE: https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="CodeRacket ">
-    <meta name="author" content="CodeRacket">
-    <meta name="robots" content="index, follow"> <!-- For SEO: index or noindex, follow or nofollow -->
-    <!-- Google SEO TAG / Verification-->
-    <meta name="google-site-verification" content="lW9m08BxEGDTmfQv0TeOZmdPUvaIDytTdVuP4Ftl2Ys" >
-    
-    
 
-    <!-- Social Media Meta Tags (Open Graph, Twitter Cards) -->
-    <meta property="og:title" content="CodeRacket - Linux Administration and Backend Web Development Portfolio">
-    <meta property="og:description" content="Explore CodeRacket's Portfolio Showcasing Linux server audits and hardening.">
+    <meta name="description" content="Linux server infrastructure audits and hardening focused on SSH and NGINX. Demonstrated configurations, case studies, and security-conscious operational practices.">
+    <meta name="author" content="CodeRacket">
+    <meta name="robots" content="index, follow">
+
+    <meta name="google-site-verification" content="lW9m08BxEGDTmfQv0TeOZmdPUvaIDytTdVuP4Ftl2Ys">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="CodeRacket - Linux Server Infrastructure & Hardening">
+    <meta property="og:description" content="Portfolio documenting Linux server audits, SSH and NGINX hardening, and infrastructure security case studies.">
     <meta property="og:image" content="https://coderacket.com/assets/images/logos/coderacket-logo-768w.webp">
     <meta property="og:url" content="https://coderacket.com">
+
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Code Racket - Linux Administration and Backend Web Development Portfolio">
-    <meta name="twitter:description" content="Explore CodeRacket's Portfolio Showcasing Linux, Security and Backend Web Development Projects.">
+    <meta name="twitter:title" content="CodeRacket - Linux Server Infrastructure & Hardening">
+    <meta name="twitter:description" content="Linux server audit and hardening portfolio focused on SSH and NGINX.">
     <meta name="twitter:image" content="https://coderacket.com/assets/images/logos/coderacket-logo-768w.webp">
     <meta name="twitter:image:alt" content="Coderacket logo">
 
-    <!-- ACCESSIBILITY and SEO—search engine rankings -->
-    <title>Nathaniel Andreano | CodeRacket Linux Server Infrastructure Portfolio</title>
+    <title>Nathaniel Andreano | Linux Server Infrastructure & Hardening</title>
 
-    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- Optional: Apple Touch Icon for iOS devices -->
-    <link rel="apple-touch-icon" href="apple-touch-icon.png"> <!-- ... Favicon: Serve different icon formats for various devices (e.g., a 32x32 pixel .ico for desktop, .png for Apple touch icons, etc.)-->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <!-- External CSS (optional, can link to stylesheets here) -->
-    
     <link rel="stylesheet" href="./assets/css/shared-styles.css">
     <link rel="stylesheet" href="./assets/css/portfolio.css">
-
-    <!-- Web Fonts (optional, etc.) -->
-    <!-- FontAwesome is Awesome -->
-    <!--
-    <link rel="preload" href="/assets/css/fontawesome.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="/assets/css/brands.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="/assets/css/solid.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="/assets/css/regular.css" as="style" onload="this.rel='stylesheet'">
--->
-
-
-    <!--NoScript for when javascript is disabled in browser and the preload fails-->
-   <!--
-    <noscript>
-      <link rel="stylesheet" href="/assets/css/fontawesome.css">
-      <link rel="stylesheet" href="/assets/css/brands.css">
-      <link rel="stylesheet" href="/assets/css/solid.css">
-      <link rel="stylesheet" href="/assets/css/regular.css">
-    </noscript> 
--->
-
-<!-- Uncomment for testing purposes !!! 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-... (insert hash)" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    
-
- 
-    <!-- OLD FONTAWESOME DELETE ME AFTER TESTING
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" type="text/css" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    -->
-
-    <!-- Local version of FontAwesome, Customize for Performance
-    all.css is a bit much. -->
     <link rel="stylesheet" href="/assets/css/all.css">
 
-    <!-- Preload Images reduces Load Times -->
-    <link rel="preload" href="./assets/images/logos/coderacket-logo-768w.webp" as="image" type="image/webp" >
+    <link rel="preload" href="./assets/images/logos/coderacket-logo-768w.webp" as="image" type="image/webp">
 </head>
 
 <body>
-    <!-- Page Content -->
-    <!-- Placeholder for the portfolio navigation system -->
-    <div data-include="header"></div>
-    
-  <main>
-          <!-- Main content of the webpage goes here -->
-  <section id="welcome-section">
-    <h1>Affordable Tech Solutions for Small Businesses and Non-Profits</h1>
-    <p>Get online fast, stay secure, grow with confidence.</p>
+<div data-include="header"></div>
+
+<main>
+
+<section id="welcome-section">
+    <h1>Linux Server Infrastructure Audits & Hardening</h1>
+    <p>Focused on SSH and NGINX configuration review, exposure reduction, and operational safety for Linux systems.</p>
+
     <div class="container">
-      <div class="contact-info">
-        <p><strong>Schedule a Free Audit:</strong></p>
-        <div id="audit-cta">
-          <p><a href="mailto: contact@coderacket.com" ><i class="icon-lazy fas fa-envelope" aria-label="Email CodeRacket"></i><span class="sr-only"></span>contact@coderacket.com</a></p>
+        <div class="contact-info">
+            <p><strong>Contact for scope discussion:</strong></p>
+            <p>
+                <a href="mailto:contact@coderacket.com">
+                    <i class="icon-lazy fas fa-envelope" aria-label="Email CodeRacket"></i>
+                    <span class="sr-only"></span>
+                    contact@coderacket.com
+                </a>
+            </p>
         </div>
-      </div>
     </div>
-  </section>
-
-
-  <section id="who-i-help">
-    <div class="container">
-      <h2>Who I Help</h2>
-      <p>I work with small businesses, nonprofits, and founders who need fast, secure website deployment— without agency pricing.</p>
-      <p>Already have a website? checkout the service offers for website Maintenance, security audits, and site package upgrades for existing websites.</p>
-    </div>
-
-  <section id="what-i-do">
-    <div class="container">
-      <h2>What I Do</h2>
-      <div class="what-i-do-grid">
-
-        <div class="what-i-do-item">
-          <i class="fas fa-bolt"></i>
-          <h3>Performance</h3>
-          <p>Speed optimizations, lazy loading, and improved Core Web Vitals.</p>
-        </div>
-
-      <div class="what-i-do-item">
-        <i class="fas fa-lock"></i>
-        <h3>Security</h3>
-        <p>Secure headers, setup secure and encrypted SSH and HTTPS, with basic app hardening built-in.</p>
-      </div>
-
-      <div class="what-i-do-item">
-        <i class="fas fa-cloud-upload-alt"></i>
-        <h3>Deployments</h3>
-        <p>Docker, NGINX, Linux servers with backups and monitoring baked in.</p>
-      </div>
-
-    </div>
-  </div>
 </section>
 
-  <section id="packages">
+<section id="who-i-help">
     <div class="container">
-      <h2>Service Packages</h2>
-      <p>Choose a package based on your needs — from simple audits to full backend deployment. Each service is designed for small businesses, startups, and non-profits that need secure, reliable, and optimized web solutions.</p>
-
-      <!-- 
-      Note: Emojis for screenreaders purely decorative—then:
-      aria-hidden="true"
-      to make it accessible add H3 element text
-      aria-label="Deployment"
-      -->    
-      <div class="package-item">
-         <h3><span role="img" aria-hidden="true">&#128313;</span> Starter</h3>
-        <ul>
-          <li>Lazy load images for faster page load</li>
-          <li>Fix layout shifts (CLS issues)</li>
-          <li>Secure essential headers</li>
-          <li>Performance and UX improvements</li>
-        </ul>
-      </div>
-
-      <div class="package-item">
-        <h3><span role="img" aria-hidden="true">&#128272;</span> Secure Site</h3>
-        <ul>
-          <li>Full HTTPS setup with TLS</li>
-          <li>Harden HTTP headers</li>
-          <li>Basic web security hardening</li>
-          <li>OWASP top 10 checkup</li>
-        </ul>
-      </div>
-
-      <div class="package-item">
-        <h3><span role="img" aria-hidden="true">&#x2699;</span> Deployment</h3>
-        <ul>
-          <li>Deploy Flask app with Docker & Gunicorn</li>
-          <li>Configure NGINX for static or dynamic apps</li>
-          <li>Basic uptime and log monitoring setup</li>
-        </ul>
-      </div>
-
-      <div class="package-item">
-        <h3><span role="img" aria-hidden="true">&#129521;</span> Infra Setup</h3>
-        <ul>
-          <li>Linux server setup & firewall configuration</li>
-          <li>Automated encrypted backups</li>
-          <li>Secure user accounts and permissions</li>
-          <li>Optional: Samba, SFTP, DNS & domain config</li>
-        </ul>
-      </div>
-      <!-- Link case studies to packages—Real scenarios with real solutions. -->
-      <div class="package-item">
-        <h3><span role="img" aria-hidden="true">&#x1F4CA;</span> Mini Audit</h3>
-        <ul>
-          <li>Quick audit of your existing site</li>
-          <li>SEO, performance, and basic security insights</li>
-          <li>PDF report with clear action steps</li>
-          <li>Great for identifying urgent improvements</li>
-        </ul>
-      </div>
+        <h2>Who This Is For</h2>
+        <p>
+            I work with individuals and small teams operating Linux servers who need to reduce exposure risk,
+            harden default configurations, or validate existing SSH and NGINX setups.
+        </p>
+        <p>
+            Typical environments include VPS instances, cloud VMs, and small on-prem systems that are
+            internet-facing.
+        </p>
     </div>
-  </section>
+</section>
 
-
-<!-- personalize, add a photo/logo & highlight trust ethos-->
-  <section id="about">
+<section id="what-i-do">
     <div class="container">
-      <h2>About Me</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>I’m Nathaniel, a backend-focused developer with over a decade of hands-on experience working with Linux, networks, and secure web systems. I now use that knowledge to help small businesses and nonprofits build secure hosting solutions for their business needs—at affordable costs.[... link to resume pdf download ...]</p>
-          <a href="#contact" class="btn">Let's Work Together</a>
-        </div>
-        <div class="about-image">
-          <img src="/assets/images/portfolio/about.jpg" alt="About Me">
-        </div>
-      </div>
-    </div>
-  </section>
+        <h2>Scope of Work</h2>
+        <div class="what-i-do-grid">
 
-  <section id="services">
-    <div class="container">
-      <h2>Services</h2>
-      <p>I offer reliable backend setups, secure deployments, Remote Access with SSH and performance-first website maintenance for small businesses.</p>
-      <div class="services-grid">
-        <div class="service-item">
-          <i class="fas fa-tachometer-alt"></i>
-          <h3>Performance</h3>
-          <p>Lazy load, CLS fixes, caching, lighthouse score optimization.</p>
-        </div>
-
-        <div class="service-item">
-          <i class="fas fa-shield-alt"></i>
-          <h3>Security</h3>
-          <p>HTTPS, firewall, headers, basic pentest, OWASP checks.</p>
-        </div>
-
-        <div class="service-item">
-          <i class="fas fa-server"></i>
-          <h3>Deployment</h3>
-          <p>Linux-based Docker deploys with NGINX, PostgreSQL, backups, and uptime monitoring.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="cta">
-    <div class="container">
-      <h2>Ready to Upgrade Your Website?</h2>
-      <p>I got you. Whether it’s website speed optimization, security enhancements, or secure server setup—you’ll get expert-level service without agency prices.</p>
-      <a href="#contact" class="btn">Contact Me</a>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>My Work</h2>
-    <p>Checkout The Projects I've Worked On. Click to view or Explore My Code on GitHub.</p>
-
-    <!-- Attempting to make projects section consistent with overall layout--><!-- Added Container -->
-    <div class="container">
-      <div class="project-container">
-
-<!-- project 0 -->    
-        <article class="project-item">
-          <a href="./projects/flask-auth/index.html" class="project-link">
-            <picture>
-              <source srcset=" ./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-480w.webp 480w, ./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-768w.webp 768w, ./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-1200w.webp 1200w" type="image/webp" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" >
-              <source srcset="./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-480w.jpg 480w, ./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-768w.jpg 768w, ./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-1200w.jpg 1200w" type="image/jpeg" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" >
-              <img src="./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-768w.jpg" alt="Screenshot of a secure login screen built with Flask" class="project-image" loading="lazy" title="Secure Flask Authentication">
-            </picture>
-          </a>
-              
-          <div class="project-info">
-            <h3 class="project-title">Flask Auth MVP</h3>
-            <p class="project-description">
-            A functional, lightweight authentication system built with Flask.
-This MVP supports user registration, login/logout, session handling, and route protection using Flask-Login. Security is enforced through CSRF tokens and secure password hashing. While foundational features are in place, future upgrades will include CAPTCHA, brute-force protection, and rate limiting.
-</p>
-            <a href="./projects/flask-auth/index.html" class="btn">Flask Auth Demo</a>
-            <a href="https://github.com/CodeRacket/flask_auth_mvp" class="btn">View Code</a>
-          </div>
-        </article>
-
-          <!-- project 1 -->    
-        <article class="project-item">
-          <a href="./mockups/flower-shop/index.html" class="project-link">
-            <picture>
-              <source srcset=" ./assets/images/mockups/flower-shop/flower-shop-mockup-homepage-thumbnail-480w.webp 480w, ./assets/images/mockups/flower-shop/flower-shop-mockup-homepage-thumbnail-768w.webp 768w, ./assets/images/mockups/flower-shop/flower-shop-mockup-homepage-thumbnail-1200w.webp 1200w" type="image/webp" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" >
-              <source srcset="./assets/images/mockups/flower-shop/flower-shop-mockup-homepage-thumbnail-480w.jpg 480w, ./assets/images/mockups/flower-shop/flower-shop-mockup-homepage-thumbnail-768w.jpg 768w, ./assets/images/mockups/flower-shop/flower-shop-mockup-homepage-thumbnail-1200w.jpg 1200w" type="image/jpeg" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" >
-              <img src="./assets/images/mockups/flower-shop/flower-shop-mockup-homepage-thumbnail-768w.jpg" alt="Illustration of a flower shop website layout with a colorful floral arrangement" class="project-image" loading="lazy" title="Coming Soon - Flower Shop Website mockup">
-            </picture>
-          </a>
-              
-          <div class="project-info">
-            <h3 class="project-title">Flower Shop Website Mockup</h3>
-            <p class="project-description">
-  The Flower Shop Mockup is Here! This website mockup is designed with local flower shops in mind, offering an accessible, professional online presence for businesses of all sizes. The easy-to-navigate catalog, responsive design, and seamless shopping experience will showcase your bouquets and floral arrangements. Whether you’re a small family-owned shop or a larger floral business, this website will help enhance customer engagement, drive sales, and grow your business online.
-</p>
-            <a href="./mockups/flower-shop/index.html" class="btn">Flower Shop Demo</a>
-            <a href="https://github.com/coderacket/coderacket/blob/main/mockups/flower-shop" class="btn">View Code</a>
-          </div>
-        </article>
-          <!-- Project 2 -->
-        <article class="project-item">
-          <picture>
-            <source srcset=" ./assets/images/projects/coming-soon-default-480w.webp 480w, ./assets/images/projects/coming-soon-default-768w.webp 768w, ./assets/images/projects/coming-soon-default-1200w.webp 1200w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" type="image/webp" >
-            <source srcset="./assets/images/projects/coming-soon-default-480w.jpg 480w, ./assets/images/projects/coming-soon-default-768w.jpg 768w, ./assets/images/projects/coming-soon-default-1200w.jpg 1200w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" type="image/jpg">
-            <img src="./assets/images/projects/coming-soon-default-768w.jpg" alt="Coming Soon - Local Bakery Website" class="project-image" loading="lazy" title="Coming Soon - Local Bakery Website Mockup ">    
-          </picture> 
-            <div class="project-info">
-              <h3 class="project-title">Coming Soon: Projects to increase value for non-profits and startups with limited funding</h3>
-               <p class="project-description">Have an idea for a project you want built? Even if its just an idea, feel free to Contact me:</p><div class="contact-info">
-               <p><a href="mailto:contact@coderacket.com" ><i class="icon-lazy fas fa-envelope" aria-label="Email CodeRacket"></i><span class="sr-only"></span>contact@coderacket.com</a></p>
+            <div class="what-i-do-item">
+                <i class="fas fa-terminal"></i>
+                <h3>SSH Audit & Hardening</h3>
+                <p>
+                    Review and hardening of OpenSSH configurations including authentication methods,
+                    cipher selection, access controls, and logging with attention to common attack patterns.
+                </p>
             </div>
-        </article>
+
+            <div class="what-i-do-item">
+                <i class="fas fa-network-wired"></i>
+                <h3>NGINX Hardening</h3>
+                <p>
+                    Configuration review for TLS, headers, request handling, and information exposure,
+                    including documentation of trade-offs and compatibility considerations.
+                </p>
+            </div>
+
+            <div class="what-i-do-item">
+                <i class="fas fa-server"></i>
+                <h3>Baseline Server Hardening</h3>
+                <p>
+                    User permissions, firewall rules, service exposure, and logging review for Linux servers.
+                </p>
+            </div>
+
+        </div>
     </div>
-  </div>
-  </section>
+</section>
 
-  <section id="contact">
-	  <h2>Contact Me</h2>
-    <p>If you'd like to Work Together, have any questions or just want to reach out send me a message.</p>
+<section id="packages">
+    <div class="container">
+        <h2>Audit & Hardening Packages</h2>
+        <p>
+            These offerings focus on configuration review and risk reduction.
+            They are not penetration tests or compliance certifications.
+        </p>
 
-    <div class="container"> <!-- Keeps spacing consistent between html elements-->
-    
-    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <div class="package-item">
+            <h3>SSH Audit & Hardening</h3>
+            <ul>
+                <li>Review of current SSH configuration</li>
+                <li>Identification of high-risk defaults and misconfigurations</li>
+                <li>Hardened configuration aligned with current best practices</li>
+                <li>Rollback-safe deployment notes</li>
+            </ul>
+        </div>
 
-      <!-- Hidden Fields -->
-      <input type="hidden" name="access_key" value="668bd9d3-e255-4b29-9412-f1e04bc88f47">
-   
-      <div class="form-group">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required placeholder="Jane Doe">
-      </div>
-      <div class="form-group">
-        <label for="phone">Your Phone:  <span class="optional">(Optional)</span></label>
-        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
-      </div>
+        <div class="package-item">
+            <h3>NGINX Audit & Hardening</h3>
+            <ul>
+                <li>TLS and protocol configuration review</li>
+                <li>Header and information leakage analysis</li>
+                <li>Request handling and rate-limit considerations</li>
+                <li>Before / after configuration comparison</li>
+            </ul>
+        </div>
 
-      <div class="form-group">
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required placeholder="you@example.com">
-      </div>
-
-      <div class="form-group">
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" rows="5" required placeholder="Send me your idea."></textarea>
-      </div>
-      <input type="hidden" name="redirect" value="https://web3forms.com/success">
-      <div class="form-group">
-        <button type="submit" class="btn">Send Message</button>
-      </div>
-
-    </form>
+        <div class="package-item">
+            <h3>Baseline Linux Server Review</h3>
+            <ul>
+                <li>User and permission model review</li>
+                <li>Firewall and exposed service analysis</li>
+                <li>Logging and audit visibility checks</li>
+                <li>Operational risk summary</li>
+            </ul>
+        </div>
     </div>
-    
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2>About</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I work primarily with Linux servers and exposed services, focusing on configuration review,
+                    hardening, and operational safety. This site documents my approach, configurations, and
+                    case-study-driven work rather than marketing claims.
+                </p>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+            <div class="about-image">
+                <img src="/assets/images/portfolio/about.jpg" alt="About Me">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Demonstrated Work</h2>
+    <p>Documented examples and in-progress case studies.</p>
+
+    <div class="container">
+        <div class="project-container">
+
+            <article class="project-item">
+                <div class="project-info">
+                    <h3 class="project-title">SSH Hardening — Case Study (In Progress)</h3>
+                    <p class="project-description">
+                        Will document threat model, configuration changes, validation steps,
+                        and operational trade-offs for an exposed SSH service.
+                    </p>
+                </div>
+            </article>
+
+            <article class="project-item">
+                <div class="project-info">
+                    <h3 class="project-title">NGINX Hardening — Case Study (In Progress)</h3>
+                    <p class="project-description">
+                        Will include TLS configuration, header hardening, request handling,
+                        and before/after comparisons.
+                    </p>
+                </div>
+            </article>
+
+            <article class="project-item">
+                <a href="./projects/flask-auth/index.html" class="project-link">
+                    <img src="./assets/images/projects/flask-auth/flask-auth-demo-thumbnail-768w.jpg"
+                         alt="Flask authentication demo"
+                         class="project-image"
+                         loading="lazy">
+                </a>
+                <div class="project-info">
+                    <h3 class="project-title">Authentication Service (Contextual Example)</h3>
+                    <p class="project-description">
+                        Demonstrates application-layer secure defaults.
+                        Included for context only and not a primary service offering.
+                    </p>
+                    <a href="https://github.com/CodeRacket/flask_auth_mvp" class="btn">View Code</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>For scope discussion or questions regarding an existing Linux server or service configuration.</p>
+
+    <div class="container">
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="668bd9d3-e255-4b29-9412-f1e04bc88f47">
+
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+            <div class="form-group">
+                <button type="submit" class="btn">Send</button>
+            </div>
+        </form>
+    </div>
+
     <div class="contact-info">
-      <p><a href="mailto:contact@coderacket.com"><i class="icon-lazy fas fa-envelope" aria-label="Email CodeRacket"></i><span class="sr-only"></span> contact@coderacket.com</a></p>
-      <p><a href="https://www.linkedin.com/in/nathaniel-andreano-668676348/" ><i class="icon-lazy fab fa-linkedin" aria-label="Linkedin"></i><span class="sr-only"></span></a> and <a href="https://github.com/coderacket" ><i class="icon-lazy fab fa-github" aria-label="Github"></i><span class="sr-only"></span></a></p>
+        <p>
+            <a href="mailto:contact@coderacket.com">
+                <i class="icon-lazy fas fa-envelope" aria-label="Email CodeRacket"></i>
+                <span class="sr-only"></span>
+                contact@coderacket.com
+            </a>
+        </p>
+        <p>
+            <a href="https://github.com/coderacket">
+                <i class="icon-lazy fab fa-github" aria-label="GitHub"></i>
+                <span class="sr-only"></span>
+            </a>
+        </p>
     </div>
-  </section>
+</section>
 
 </main>
-    <script src="./assets/js/main.js"></script>  
-    <script src="./assets/js/includes.js"></script>
-    <div data-include="footer"></div>
-    <script src="./assets/js/icons-deferred.js"></script>
+
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/includes.js"></script>
+<div data-include="footer"></div>
+<script src="./assets/js/icons-deferred.js"></script>
+
 </body>
 </html>
