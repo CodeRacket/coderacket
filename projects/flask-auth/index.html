@@ -3,187 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Coderacket — Web Application Security Researcher and Freelancer</title>
-  <meta name="description" content="Flask backends, web app security, and devops. Explore my projects and get in touch." />
+
+  <title>Coderacket — Linux Infrastructure & Authentication Demo</title>
+  <meta name="description" content="A focused Flask authentication demo illustrating how application auth decisions impact Linux server and infrastructure security." />
+
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-      <!-- External CSS (optional, can link to stylesheets here) -->
-    
-    <link rel="stylesheet" href="/assets/css/shared-styles.css">
-    
-    <!-- FontAwesome icons -->
-    <link rel="stylesheet" href="/assets/css/all.css">
-<!-- Preload Images reduces Load Times -->
-    <link rel="preload" href="/assets/images/logos/coderacket-logo-768w.webp" as="image" type="image/webp" >
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/assets/css/shared-styles.css">
+
+  <!-- FontAwesome icons -->
+  <link rel="stylesheet" href="/assets/css/all.css">
+
+  <!-- Preload Images -->
+  <link rel="preload" href="/assets/images/logos/coderacket-logo-768w.webp" as="image" type="image/webp">
 </head>
+
 <body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
 
   <!-- Include header.html for Portfolio navbar -->
   <div data-include="header"></div>
+
   <!-- Hero Section -->
   <header class="max-w-5xl mx-auto px-6 py-20 text-center">
     <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
-  Flask Authentication MVP [currently being upgraded]
+      Flask Authentication — Infrastructure Awareness Demo
     </h1>
-    <p class="text-xl md:text-2xl max-w-2xl mx-auto text-gray-700 mb-8">
 
-      A lightweight, functional user authentication system built with Flask. Features include registration, login, session handling, and route protection — ready to be extended for production use.
-      Since the Launch of this demo the Flask authentication system has had several security upgrades as well as production based upgrades. </p>
-      
-      <ul> Changes:
-	  <li>1.) Security Upgrades for XSS, CSRF, and Bruteforce attacks.</li>
-          <li>2.) Migrated from a SQLite database to a PostgreSQL Database.</li>
-	  <li>3.) The App no longer uses venv virtual environment, instead it now relies on Docker containers.</li>
-   
-    <a href="https://github.com/CodeRacket/flask_auth_mvp" target="_blank" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition">
-  View on GitHub
+    <p class="text-xl md:text-2xl max-w-2xl mx-auto text-gray-700 mb-8">
+      This project is a focused demonstration of how application-level authentication
+      decisions interact with Linux servers, reverse proxies, and infrastructure security.
+      It is <strong>not a commercial product</strong>, but a controlled environment used to
+      explore session handling, access boundaries, and secure defaults from an
+      infrastructure perspective.
+    </p>
+
+    <ul class="text-left max-w-2xl mx-auto mb-8 text-gray-700">
+      <strong>What this demo demonstrates:</strong>
+      <li>1.) Practical mitigation of common auth-layer risks (bruteforce, CSRF, reflected input).</li>
+      <li>2.) How authentication systems interact with production databases (PostgreSQL vs SQLite).</li>
+      <li>3.) Containerized deployment to reflect real infrastructure boundaries rather than local venv usage.</li>
+    </ul>
+
+    <a href="https://github.com/CodeRacket/flask_auth_mvp" target="_blank"
+       class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition">
+      View Source & Infrastructure Notes on GitHub
     </a>
   </header>
 
   <!-- Features Section -->
   <section class="max-w-5xl mx-auto px-6 py-16 grid gap-12 md:grid-cols-3">
     <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-      <h3 class="text-xl font-semibold mb-3">Hardened User Authentication</h3>
+      <h3 class="text-xl font-semibold mb-3">Authentication Boundaries</h3>
       <p class="text-gray-700">
-        Supports user registration, login, and logout using Flask-Login with protected routes and session management. Built in protection against bruteforce and dictionary attacks.
+        Demonstrates session-based authentication, protected routes, and access control
+        with an emphasis on how these choices affect server-side trust and exposure.
       </p>
     </article>
+
     <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-      <h3 class="text-xl font-semibold mb-3">CSRF & Password Protection</h3>
+      <h3 class="text-xl font-semibold mb-3">Secure Defaults & Risk Reduction</h3>
       <p class="text-gray-700">
-        Security features include CSRF tokens and password hashing using Werkzeug for safe credential handling and storage.
+        Uses standard protections (CSRF tokens, password hashing) to illustrate baseline
+        defenses expected by modern infrastructure and reverse-proxy deployments.
       </p>
     </article>
-    <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"> 
-      <h3 class="text-xl font-semibold mb-3">Extendable MVP</h3>
+
+    <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-3">Scope Awareness</h3>
       <p class="text-gray-700">
-        Designed as a modular foundation. Easy to extend with features like rate limiting, CAPTCHA, and JWT-based auth.
+        Intentionally limited in scope. Advanced concerns (JWTs, OAuth, CAPTCHA, WAF rules)
+        are documented but left out to keep the focus on infrastructure fundamentals.
       </p>
     </article>
   </section>
 
   <!-- Project Showcase Section -->
   <section class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold mb-8 text-center">Project Screenshots</h2>
+    <h2 class="text-3xl font-bold mb-4 text-center">Project Screenshots</h2>
+
+    <p class="text-gray-600 text-center max-w-3xl mx-auto mb-10">
+      Screenshots below document authentication flow and system behavior. Visual design
+      is intentionally minimal to keep focus on access control and infrastructure impact.
+    </p>
+
     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      
+
       <!-- Homepage -->
-       <article class="bg-white p-4 rounded-lg shadow">
-        <picture>
-          <source srcset="screenshots/flask_home-480w.webp 480w, screenshots/flask_home-768w.webp 768w, screenshots/flask_home-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
-          <source srcset="screenshots/flask_home-480w.jpg 480w, screenshots/flask_home-768w.jpg 768w, screenshots/flask_home-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
-          <img src="screenshots/flask_home-768w.jpg" alt="Flask login form with username and password fields" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
-        </picture>
-        <p class="mt-2 text-sm text-gray-600 text-center">Homepage linking to registration and login forms.</p> 
-      </article>
-      
-      <!-- Registration Form -->
       <article class="bg-white p-4 rounded-lg shadow">
-        <picture>
-          <source srcset="screenshots/flask_coderacket_registration-480w.webp 480w, screenshots/flask_coderacket_registration-768w.webp 768w, screenshots/flask_coderacket_registration-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
-          <source srcset="screenshots/flask_coderacket_registration-480w.jpg 480w, screenshots/flask_coderacket_registration-768w.jpg 768w, screenshots/flask_coderacket_registration-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
-          <img src="screenshots/flask_coderacket_registration-768w.jpg" alt="Flask registration form requiring unique username and email" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
-        </picture>
-        <p class="mt-2 text-sm text-gray-600 text-center">Registration form with server-side checks for unique email and username.</p>
+        <img src="screenshots/flask_home-768w.jpg" alt="Flask login form"
+             class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        <p class="mt-2 text-sm text-gray-600 text-center">
+          Homepage linking to registration and login flows.
+        </p>
       </article>
 
-      <!-- Registration Error -->
+      <!-- Registration -->
       <article class="bg-white p-4 rounded-lg shadow">
-        <picture>
-          <source srcset="screenshots/flask_unique_email_warning-480w.webp 480w, screenshots/flask_unique_email_warning-768w.webp 768w, screenshots/flask_unique_email_warning-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
-          <source srcset="screenshots/flask_unique_email_warning-480w.jpg 480w, screenshots/flask_unique_email_warning-768w.jpg 768w, screenshots/flask_unique_email_warning-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
-          <img src="screenshots/flask_unique_email_warning-768w.jpg" alt="Red flash message when email or username is not unique" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
-        </picture>
-        <p class="mt-2 text-sm text-gray-600 text-center">Red flash message on registration failure — to be replaced with generic messages in production.</p>
+        <img src="screenshots/flask_coderacket_registration-768w.jpg" alt="Flask registration form"
+             class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        <p class="mt-2 text-sm text-gray-600 text-center">
+          Registration with server-side uniqueness enforcement.
+        </p>
       </article>
 
-      
-      <!-- Registration Error -->
+      <!-- Error Disclosure -->
       <article class="bg-white p-4 rounded-lg shadow">
-        <picture>
-          <source srcset="screenshots/flask_coderacket_unique_username_warning-480w.jpg 480w, screenshots/flask_coderacket_unique_username_warning-768w.webp 768w, screenshots/flask_coderacket_unique_username_warning-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
-          <source srcset="screenshots/flask_coderacket_unique_username_warning-480w.jpg 480w, screenshots/flask_coderacket_unique_username_warning-768w.jpg 768w, screenshots/flask_coderacket_unique_username_warning-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
-          <img src="screenshots/flask_coderacket_unique_username_warning-768w.jpg" alt="Red flash message when email or username is not unique" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
-        </picture>
-        <p class="mt-2 text-sm text-gray-600 text-center">Red flash message on registration failure — to be replaced with generic messages in production.</p>
+        <img src="screenshots/flask_unique_email_warning-768w.jpg" alt="Registration error message"
+             class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        <p class="mt-2 text-sm text-gray-600 text-center">
+          Explicit error messaging shown intentionally to discuss information disclosure tradeoffs.
+        </p>
       </article>
 
-      <!-- Login Form -->
+      <!-- Login -->
       <article class="bg-white p-4 rounded-lg shadow">
-        <picture>
-          <source srcset="screenshots/flask-login-form-480w.webp 480w, screenshots/flask-login-form-768w.webp 768w, screenshots/flask-login-form-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
-          <source srcset="screenshots/flask-login-form-480w.jpg 480w, screenshots/flask-login-form-768w.jpg 768w, screenshots/flask-login-form-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
-          <img src="screenshots/flask-login-form-768w.jpg" alt="Flask login form with username and password fields" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
-        </picture>
-        <p class="mt-2 text-sm text-gray-600 text-center">Login form used after successful registration or return visit.</p>
+        <img src="screenshots/flask-login-form-768w.jpg" alt="Login form"
+             class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        <p class="mt-2 text-sm text-gray-600 text-center">
+          Login flow enforcing session-based access control.
+        </p>
       </article>
 
-      <!-- Login Success -->
+      <!-- Dashboard -->
       <article class="bg-white p-4 rounded-lg shadow">
-        <picture>
-          <source srcset="screenshots/flask-login-success-480w.webp 480w, screenshots/flask-login-success-768w.webp 768w, screenshots/flask-login-success-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
-          <source srcset="screenshots/flask-login-success-480w.jpg 480w, screenshots/flask-login-success-768w.jpg 768w, screenshots/flask-login-success-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
-          <img src="screenshots/flask-login-success-768w.jpg" alt="Successful login flash message in green" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
-        </picture>
-        <p class="mt-2 text-sm text-gray-600 text-center">Login success flash message appears and user is redirected to dashboard.</p>
+        <img src="screenshots/flask-dashboard-768w.jpg" alt="User dashboard"
+             class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        <p class="mt-2 text-sm text-gray-600 text-center">
+          Minimal dashboard — UI intentionally deprioritized in favor of auth flow clarity.
+        </p>
       </article>
 
-      <!-- User Dashboard -->
+      <!-- Terminal -->
       <article class="bg-white p-4 rounded-lg shadow">
-        <picture>
-          <source srcset="screenshots/flask-dashboard-480w.webp 480w, screenshots/flask-dashboard-768w.webp 768w, screenshots/flask-dashboard-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
-          <source srcset="screenshots/flask-dashboard-480w.jpg 480w, screenshots/flask-dashboard-768w.jpg 768w, screenshots/flask-dashboard-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
-          <img src="screenshots/flask-dashboard-768w.jpg" alt="Dashboard after login showing logged-in user" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
-        </picture>
-        <p class="mt-2 text-sm text-gray-600 text-center">Basic user dashboard after login — no frontend styling yet.</p>
-      </article>
-
-      <!-- Logout -->
-      <article class="bg-white p-4 rounded-lg shadow">
-        <picture>
-          <source srcset="screenshots/flask-logout-480w.webp 480w, screenshots/flask-logout-768w.webp 768w, screenshots/flask-logout-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
-          <source srcset="screenshots/flask-logout-480w.jpg 480w, screenshots/flask-logout-768w.jpg 768w, screenshots/flask-logout-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
-          <img src="screenshots/flask-logout-768w.jpg" alt="Logout route confirmed, session destroyed" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
-        </picture>
-        <p class="mt-2 text-sm text-gray-600 text-center">Logout action ends session and redirects to login page securely.</p>
-      </article>
-
-      <!-- Terminal Start -->
-      <article class="bg-white p-4 rounded-lg shadow">
-        <picture>
-          <source srcset="screenshots/flask-terminal-run-480w.webp 480w, screenshots/flask-terminal-run-768w.webp 768w, screenshots/flask-terminal-run-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/webp">
-          <source srcset="screenshots/flask-terminal-run-480w.jpg 480w, screenshots/flask-terminal-run-768w.jpg 768w, screenshots/flask-terminal-run-1200w.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" type="image/jpeg">
-          <img src="screenshots/flask-terminal-run-768w.jpg" alt="Flask development server running in terminal" class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
-        </picture>
-        <p class="mt-2 text-sm text-gray-600 text-center">Flask server terminal output — because terminals are beautiful.</p>
+        <img src="screenshots/flask-terminal-run-768w.jpg" alt="Flask server running in terminal"
+             class="rounded w-full h-auto object-cover max-h-60 md:max-h-48" loading="lazy" />
+        <p class="mt-2 text-sm text-gray-600 text-center">
+          Local containerized runtime — used to mirror infrastructure boundaries.
+        </p>
       </article>
 
     </div>
-    
   </section>
- 
+
   <!-- Contact Section -->
   <section id="contact" class="max-w-5xl mx-auto px-6 py-16 text-center">
     <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
     <p class="text-gray-700 mb-6">
       Interested in working together? Reach out via email or LinkedIn.
     </p>
-    <a href="mailto:Contact@coderacket.com" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition mr-4">
+    <a href="mailto:Contact@coderacket.com"
+       class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition mr-4">
       Email Me
     </a>
-    <a href="https://www.linkedin.com/in/nathaniel-andreano-668676348" target="_blank" class="inline-block bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-900 transition">
+    <a href="https://www.linkedin.com/in/nathaniel-andreano-668676348" target="_blank"
+       class="inline-block bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-900 transition">
       LinkedIn
     </a>
   </section>
 
   <div data-include="footer"></div>
 
-  <script src="../../assets/js/main.js"></script>  
+  <script src="../../assets/js/main.js"></script>
   <script src="../../assets/js/includes.js"></script>
   <script src="../../assets/js/icons-deferred.js"></script>
-  
-  
-  
-  
+
 </body>
 </html>
+
