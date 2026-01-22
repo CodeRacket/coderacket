@@ -1,12 +1,13 @@
 /* ====== Media Queries for Responsiveness ====== */
   
   /* Small to Medium Desktops, Tablets in landscape */
-  @media (min-width:992px) and (max-width:1199px){
+/*  @media (min-width:992px) and (max-width:1199px){
     .project-container{
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  
+*/  
+
 /* Large Desktop Screens & Above */
 @media (min-width: 1200px){
     .project-container{
