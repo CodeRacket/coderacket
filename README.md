@@ -51,6 +51,14 @@ The site is built as a static, dependency-light project and prioritizes:
 
 ---
 
+## Supporting Authentication Demo
+
+A lightweight **Flask Auth MVP** is maintained in a separate repository to complement these Linux server hardening workflows. 
+It demonstrates **secure authentication, session management, and TLS handling** in a containerized Flask application.
+
+- Repo: [Flask Auth MVP](https://github.com/CodeRacket/flask_auth_mvp)
+- Purpose: Educational reference for **server security interactions**, not a production-ready web service
+
 ## Live Site
 
 https://coderacket.com
